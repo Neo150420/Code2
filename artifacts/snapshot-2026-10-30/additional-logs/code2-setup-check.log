@@ -1,0 +1,28 @@
+All requested versions already installed
+Using Python 3.10.22 environment at: /workspace/research/.venv
+Checked 72 packages in 6ms
+Using Python 3.8.20 environment at: /workspace/research/.sumo-venv
+Checked 1 package in 0.85ms
+Using Python 3.10.22 environment at: /workspace/research/.venv
+Checked 72 packages in 1ms
+All installed packages are compatible
+Using Python 3.8.20 environment at: /workspace/research/.sumo-venv
+Checked 1 package in 0.30ms
+All installed packages are compatible
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+test_efficiency_reward_handles_ties_and_risk_has_negative_sign (test_correctness.BaselineCorrectness) ... ok
+test_evaluation_checkpoint_round_trip (test_correctness.BaselineCorrectness) ... ok
+test_full_resume_restores_buffers_optimizer_and_next_update (test_correctness.BaselineCorrectness) ... ok
+test_nonterminal_bellman_bootstrap_and_actual_parameter_updates (test_correctness.BaselineCorrectness) ... ok
+test_risk_labels_require_observed_outcomes_and_padding_matches (test_correctness.BaselineCorrectness) ... ok
+test_rotation_preserves_all_eight_directions (test_correctness.BaselineCorrectness) ... ok
+test_scalar_actions_and_replay_shape_guard (test_correctness.BaselineCorrectness) ... ok
+test_throughput_counts_entry_once_when_vehicle_moves_inside_junction (test_correctness.BaselineCorrectness) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.291s
+
+OK
+Original simulator input hashes verified

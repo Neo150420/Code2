@@ -1,0 +1,17 @@
+{
+  "stage": "waiting_for_checkpoints",
+  "monitor_pid": 6510,
+  "requested": [
+    10
+  ],
+  "completed": [
+    1,
+    3
+  ],
+  "validation_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "updated_unix": 1793329494.9480522
+}

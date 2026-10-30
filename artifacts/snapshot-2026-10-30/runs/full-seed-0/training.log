@@ -1,0 +1,336 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+***Starting server on port 59363 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (818ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.22s
+ TraCI-Duration: 1.20s
+ Real time factor: 0.819001
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0000/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0000/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 0, "seed": 0, "sumo_seed": 1, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 16115, "nonterminal_transitions": 12825, "terminal_transitions": 3290, "sac_updates": 5, "risk_update_calls": 4, "risk_minibatches": 84, "missing_transition_keys": 0, "reward_sum": -24729.414609818174, "elapsed_seconds": 239.35519440500047, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 9.353778125000002, "aql_lane_time_mean_vehicles": 0.3960625, "junction_entries_in_window": 1997, "unique_collision_vehicle_ids_in_window": 4, "collision_vehicle_ids_per_junction_entry_percent": 0.200300450676014, "unique_actual_collision_vehicles_total": 267, "unique_actual_junction_collision_vehicles_total": 9, "junction_collision_pair_events_in_window": 4, "collision_pair_events_per_junction_entry_percent": 0.200300450676014, "unique_training_proxy_vehicles": 849, "departures_after_reset": 3564, "arrivals_after_reset": 2476, "vehicles_remaining": 1175, "risk_safe_buffer": 799, "risk_collision_buffer": 837, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 1000, "q_loss": 79.094482421875, "a_loss": 0.0976710170507431, "alpha_loss": -3.506514549255371, "risk_loss": 0.6945999562740326}}
+***Starting server on port 34999 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (881ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.17s
+ TraCI-Duration: 1.15s
+ Real time factor: 0.854701
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0001/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0001/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Traceback (most recent call last):
+  File "/workspace/Code2/baseline.py", line 187, in run_episode
+    next_obs, rewards, dones, truncated, info, transition_obs = env.step(actions, risks)
+  File "/workspace/Code2/Env.py", line 893, in step
+    obs, rewards, dones, truncated, infos, old_obs = self.step_once(action, safe_reward_dict)
+  File "/workspace/Code2/Env.py", line 607, in step_once
+    self.sumo_interface.step()
+  File "/workspace/Code2/core/sumo_interface.py", line 116, in step
+    self.tc.simulationStep()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 319, in simulationStep
+    result = self._sendCmd(tc.CMD_SIMSTEP, None, None, "D", step)
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 181, in _sendCmd
+    return self._sendExact()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 87, in _sendExact
+    result = self._recvExact()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 66, in _recvExact
+    t = self._socket.recv(4 - len(result))
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/Code2/baseline.py", line 371, in <module>
+    main()
+  File "/workspace/Code2/baseline.py", line 359, in main
+    summary, step = run_episode(agent, predictor, args, out, episode, step)
+  File "/workspace/Code2/baseline.py", line 291, in run_episode
+    env.close()
+  File "/workspace/Code2/Env.py", line 920, in close
+    self.sumo_interface.close()
+  File "/workspace/Code2/core/sumo_interface.py", line 195, in close
+    self.tc.close()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 392, in close
+    self._sendCmd(tc.CMD_CLOSE, None, None)
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 181, in _sendCmd
+    return self._sendExact()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/connection.py", line 94, in _sendExact
+    err = result.readString()
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/storage.py", line 71, in readString
+    return str(self.read("!%ss" % length)[0].decode("latin1"))
+  File "/workspace/research/.venv/lib/python3.10/site-packages/traci/storage.py", line 40, in read
+    return struct.unpack(format, self._content[oldPos:self._pos])
+struct.error: unpack requires a buffer of 134217728 bytes
+malloc_consolidate(): unaligned fastbin chunk detected
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+***Starting server on port 55031 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (749ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.99s
+ TraCI-Duration: 0.97s
+ Real time factor: 1.01112
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0001/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0001/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 1, "seed": 1, "sumo_seed": 2, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 17263, "nonterminal_transitions": 13953, "terminal_transitions": 3310, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 276, "missing_transition_keys": 0, "reward_sum": -23813.339479622475, "elapsed_seconds": 295.8278845249997, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 8.161523958333333, "aql_lane_time_mean_vehicles": 0.417125, "junction_entries_in_window": 2024, "unique_collision_vehicle_ids_in_window": 3, "collision_vehicle_ids_per_junction_entry_percent": 0.1482213438735178, "unique_actual_collision_vehicles_total": 349, "unique_actual_junction_collision_vehicles_total": 4, "junction_collision_pair_events_in_window": 4, "collision_pair_events_per_junction_entry_percent": 0.1976284584980237, "unique_training_proxy_vehicles": 833, "departures_after_reset": 3528, "arrivals_after_reset": 2515, "vehicles_remaining": 1100, "risk_safe_buffer": 1590, "risk_collision_buffer": 1653, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 2000, "q_loss": 76.6974868774414, "a_loss": 0.2349526584148407, "alpha_loss": -3.556800603866577, "risk_loss": 0.6873122922579448}}
+***Starting server on port 42929 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (713ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.91s
+ TraCI-Duration: 0.89s
+ Real time factor: 1.09529
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0002/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '3', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0002/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '3', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 2, "seed": 2, "sumo_seed": 3, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 18918, "nonterminal_transitions": 15653, "terminal_transitions": 3265, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 462, "missing_transition_keys": 0, "reward_sum": -21100.82715605582, "elapsed_seconds": 355.8301701620003, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 15.290392708333332, "aql_lane_time_mean_vehicles": 0.45425, "junction_entries_in_window": 1981, "unique_collision_vehicle_ids_in_window": 4, "collision_vehicle_ids_per_junction_entry_percent": 0.20191822311963656, "unique_actual_collision_vehicles_total": 224, "unique_actual_junction_collision_vehicles_total": 6, "junction_collision_pair_events_in_window": 4, "collision_pair_events_per_junction_entry_percent": 0.20191822311963656, "unique_training_proxy_vehicles": 763, "departures_after_reset": 3566, "arrivals_after_reset": 2360, "vehicles_remaining": 1293, "risk_safe_buffer": 2368, "risk_collision_buffer": 2414, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 3000, "q_loss": 65.44412231445312, "a_loss": 0.3531425893306732, "alpha_loss": -3.538520574569702, "risk_loss": 0.6257079334946366}}
+***Starting server on port 35037 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (840ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.00s
+ TraCI-Duration: 0.97s
+ Real time factor: 1.00503
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0003/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '4', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0003/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '4', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 3, "seed": 3, "sumo_seed": 4, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 21478, "nonterminal_transitions": 18188, "terminal_transitions": 3290, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 645, "missing_transition_keys": 0, "reward_sum": -17182.020993053215, "elapsed_seconds": 1247.8521646830004, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 8.656519791666668, "aql_lane_time_mean_vehicles": 0.4948125, "junction_entries_in_window": 2009, "unique_collision_vehicle_ids_in_window": 5, "collision_vehicle_ids_per_junction_entry_percent": 0.24888003982080636, "unique_actual_collision_vehicles_total": 432, "unique_actual_junction_collision_vehicles_total": 7, "junction_collision_pair_events_in_window": 7, "collision_pair_events_per_junction_entry_percent": 0.34843205574912894, "unique_training_proxy_vehicles": 857, "departures_after_reset": 3478, "arrivals_after_reset": 2413, "vehicles_remaining": 1151, "risk_safe_buffer": 3142, "risk_collision_buffer": 3254, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 4000, "q_loss": 59.76007080078125, "a_loss": 0.47349244356155396, "alpha_loss": -3.5267174243927, "risk_loss": 0.5164426619909247}}
+***Starting server on port 37267 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (704ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.02s
+ TraCI-Duration: 0.99s
+ Real time factor: 0.984252
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0004/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '5', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0004/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '5', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 4, "seed": 4, "sumo_seed": 5, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 19951, "nonterminal_transitions": 16891, "terminal_transitions": 3060, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 837, "missing_transition_keys": 0, "reward_sum": -8315.860044959156, "elapsed_seconds": 454.03102896699966, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 8.921964583333333, "aql_lane_time_mean_vehicles": 0.325125, "junction_entries_in_window": 1803, "unique_collision_vehicle_ids_in_window": 3, "collision_vehicle_ids_per_junction_entry_percent": 0.16638935108153077, "unique_actual_collision_vehicles_total": 201, "unique_actual_junction_collision_vehicles_total": 6, "junction_collision_pair_events_in_window": 3, "collision_pair_events_per_junction_entry_percent": 0.16638935108153077, "unique_training_proxy_vehicles": 812, "departures_after_reset": 3441, "arrivals_after_reset": 2187, "vehicles_remaining": 1341, "risk_safe_buffer": 3890, "risk_collision_buffer": 4056, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 5000, "q_loss": 61.31690216064453, "a_loss": 0.5873508453369141, "alpha_loss": -3.4331557750701904, "risk_loss": 0.4506912571127697}}
+***Starting server on port 40405 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (693ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.93s
+ TraCI-Duration: 0.91s
+ Real time factor: 1.07991
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0005/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '6', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0005/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '6', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 5, "seed": 5, "sumo_seed": 6, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 28016, "nonterminal_transitions": 25171, "terminal_transitions": 2845, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 1014, "missing_transition_keys": 0, "reward_sum": -7428.87746499413, "elapsed_seconds": 508.528242845, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 18.07259166666667, "aql_lane_time_mean_vehicles": 0.44475, "junction_entries_in_window": 1613, "unique_collision_vehicle_ids_in_window": 1, "collision_vehicle_ids_per_junction_entry_percent": 0.06199628022318661, "unique_actual_collision_vehicles_total": 292, "unique_actual_junction_collision_vehicles_total": 2, "junction_collision_pair_events_in_window": 1, "collision_pair_events_per_junction_entry_percent": 0.06199628022318661, "unique_training_proxy_vehicles": 773, "departures_after_reset": 3614, "arrivals_after_reset": 2369, "vehicles_remaining": 1332, "risk_safe_buffer": 4620, "risk_collision_buffer": 4815, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 6000, "q_loss": 67.57102966308594, "a_loss": 0.6625550389289856, "alpha_loss": -3.2849507331848145, "risk_loss": 0.43266166100218956}}
+***Starting server on port 49963 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (869ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.03s
+ TraCI-Duration: 1.00s
+ Real time factor: 0.97371
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0006/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '7', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0006/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '7', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 6, "seed": 6, "sumo_seed": 7, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 36580, "nonterminal_transitions": 34191, "terminal_transitions": 2389, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 1176, "missing_transition_keys": 0, "reward_sum": 4580.564520880639, "elapsed_seconds": 558.1451060110003, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 24.915642708333333, "aql_lane_time_mean_vehicles": 0.4375, "junction_entries_in_window": 1190, "unique_collision_vehicle_ids_in_window": 0, "collision_vehicle_ids_per_junction_entry_percent": 0.0, "unique_actual_collision_vehicles_total": 289, "unique_actual_junction_collision_vehicles_total": 0, "junction_collision_pair_events_in_window": 0, "collision_pair_events_per_junction_entry_percent": 0.0, "unique_training_proxy_vehicles": 613, "departures_after_reset": 3507, "arrivals_after_reset": 2079, "vehicles_remaining": 1515, "risk_safe_buffer": 5308, "risk_collision_buffer": 5410, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 7000, "q_loss": 69.08650970458984, "a_loss": 0.60750812292099, "alpha_loss": -2.562563419342041, "risk_loss": 0.41325424485896006}}
+***Starting server on port 52045 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (705ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.98s
+ TraCI-Duration: 0.96s
+ Real time factor: 1.02249
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0007/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '8', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0007/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '8', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 7, "seed": 7, "sumo_seed": 8, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 48473, "nonterminal_transitions": 46816, "terminal_transitions": 1657, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 1317, "missing_transition_keys": 0, "reward_sum": -130715.50845665402, "elapsed_seconds": 651.1372148479995, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 56.702990625000005, "aql_lane_time_mean_vehicles": 0.475375, "junction_entries_in_window": 608, "unique_collision_vehicle_ids_in_window": 1, "collision_vehicle_ids_per_junction_entry_percent": 0.16447368421052633, "unique_actual_collision_vehicles_total": 51, "unique_actual_junction_collision_vehicles_total": 1, "junction_collision_pair_events_in_window": 1, "collision_pair_events_per_junction_entry_percent": 0.16447368421052633, "unique_training_proxy_vehicles": 420, "departures_after_reset": 3393, "arrivals_after_reset": 1445, "vehicles_remaining": 2034, "risk_safe_buffer": 5893, "risk_collision_buffer": 5810, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 8000, "q_loss": 79.39776611328125, "a_loss": 0.48939111828804016, "alpha_loss": -1.6301238536834717, "risk_loss": 0.408678262879997}}
+***Starting server on port 46277 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (740ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.01s
+ TraCI-Duration: 0.99s
+ Real time factor: 0.99108
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0008/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '9', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/full-seed-0/training/episode-0008/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '9', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Traceback (most recent call last):
+  File "/workspace/Code2/baseline.py", line 371, in <module>
+    main()
+  File "/workspace/Code2/baseline.py", line 359, in main
+    summary, step = run_episode(agent, predictor, args, out, episode, step)
+  File "/workspace/Code2/baseline.py", line 192, in run_episode
+    raise RuntimeError(f'Transition coverage mismatch: actions={set(actions)}, rewards={set(rewards)}')
+RuntimeError: Transition coverage mismatch: actions={'37722941.4', '229489595#4.15', '229489602#4.11', '229489602#4.4@7.234838080694651', '978613913#0.17', '978615349#0.17', '978613907#0.12', '978615349#0.16', '877763351#0.12', '37722941.5', '877763351#0.11', '877763350#5.46', '978615349#0.14', '877763365#6.34', '229357869#5.37', '36870615#1.4@7.934378170343212', '436475433#2.36', '978613913#0.6@9.580097166540526', 'gneE41.58', '877763364#0.6@4.532371666660021', '229357869#5.43', '43076363.4', '36870636#12.20@0.2907627193338447', '229357869#5.53', '229488614#0.1@3.038322937471741', '229357869#5.48', '229489781#11.4@0.41067098457115536', 'gneE41.52', '229357869#5.46', '877763365#6.9@2.009669492973548', '877763364#0.5@9.17344467259179', '36870636#12.13@5.089650022899459', '229357869#5.35', '229489781#11.5@0.5029451017877618', '877763365#6.32', '229357869#5.47', '877763365#6.31', '229357869#5.14@5.0604658443464245', '877763350#5.48', '229488614#0.3', '877763365#6.33', '229489781#11.13'}, rewards={'37722941.4', '229489595#4.15', '229489602#4.11', '229489602#4.4@7.234838080694651', '978613913#0.17', '978615349#0.17', '978613907#0.12', '978615349#0.16', '877763351#0.12', '37722941.5', '877763351#0.11', '877763350#5.46', '978615349#0.14', '877763365#6.34', '229357869#5.37', '36870615#1.4@7.934378170343212', '436475433#2.36', '978613913#0.6@9.580097166540526', 'gneE41.58', '877763364#0.6@4.532371666660021', '229357869#5.43', '43076363.4', '36870636#12.20@0.2907627193338447', '229357869#5.53', '229488614#0.1@3.038322937471741', '229357869#5.48', '229489781#11.4@0.41067098457115536', 'gneE41.52', '229357869#5.46', '877763365#6.9@2.009669492973548', '877763364#0.5@9.17344467259179', '36870636#12.13@5.089650022899459', '229357869#5.35', '229489781#11.5@0.5029451017877618', '877763365#6.32', '229357869#5.47', '877763365#6.31', '229357869#5.14@5.0604658443464245', '229488614#0.3', '877763365#6.33', '229489781#11.13'}

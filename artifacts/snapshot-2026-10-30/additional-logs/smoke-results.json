@@ -1,0 +1,41 @@
+{
+  "label": "component compatibility smoke; no published results reproduced",
+  "model": {
+    "status": "passed",
+    "details": {
+      "torch": "1.13.1+cpu",
+      "cuda_available": false,
+      "predictor_parameters": 1223681,
+      "forward_backward_bce": 0.6889747977256775,
+      "balanced_buffer_training_bce": 0.6924004554748535,
+      "safe_buffer": 128,
+      "risk_buffer": 64,
+      "upstream_action_shape": [
+        3,
+        98
+      ],
+      "intended_action_shape": [
+        3,
+        1
+      ],
+      "synthetic_data_only": true
+    }
+  },
+  "environment": {
+    "status": "passed",
+    "details": {
+      "control_steps": 100,
+      "initial_simulation_step": 26,
+      "final_simulation_step": 126,
+      "observations_checked": 290,
+      "rewards_checked": 290,
+      "elapsed_seconds": 7.050095014999897,
+      "policy": "fixed zero acceleration; not trained",
+      "simulator_version": [
+        20,
+        "SUMO 1.12.0"
+      ],
+      "use_safety_predictor": false
+    }
+  }
+}

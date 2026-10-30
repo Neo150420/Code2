@@ -1,0 +1,133 @@
+{
+  "config": {
+    "mode": "train",
+    "out": "/workspace/Code2/runs/resume-integration-001",
+    "checkpoint": null,
+    "resume": "/workspace/Code2/runs/resume-integration-001/resume.pt",
+    "device": "cpu",
+    "episodes": 2,
+    "horizon": 200,
+    "warmup": 100,
+    "seed": 0,
+    "sumo_seed": 1,
+    "update_every": 50,
+    "threads": 2,
+    "original_paper_reproduced": false,
+    "protocol": "corrected_reference_assets_v2",
+    "original_assets": {
+      "upstream": "https://github.com/hank111525/SAC-RWB",
+      "commit": "f60cdbadc8b65cf4699edc6566af7936ff02fba6",
+      "sha256": {
+        "real_data/osm.sumocfg": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f",
+        "real_data/CSeditClean_1.net_threelegs.xml": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4",
+        "real_data/newroute1220_start0.xml": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+      }
+    },
+    "metric_note": "Lane-time queue/wait averages; selected-junction collision vehicle IDs and collision pair onset events per junction entry. Not guaranteed identical to paper CR.",
+    "simulator_horizon_includes_reset_warmup": true,
+    "code_sha256": {
+      "baseline.py": "be3d00de644a93df4fa2bbb4b58788198bc56477e1546be7fd19b9bae101732f",
+      "Env.py": "c0f34739436b391ee3854e1604b7eeb4dad0b5c88fa0adba92696e3b543b91b5",
+      "sac/SAC.py": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52",
+      "algos/transformer_risk_model.py": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5",
+      "core/sumo_interface.py": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    "resumed_from": "/workspace/Code2/runs/resume-integration-001/resume.pt"
+  },
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 0,
+      "sumo_seed": 1,
+      "stage": "training pilot",
+      "training_conflict_proxy": true,
+      "risk_at_inference": true,
+      "control_steps": 174,
+      "transitions": 760,
+      "nonterminal_transitions": 499,
+      "terminal_transitions": 261,
+      "sac_updates": 2,
+      "risk_update_calls": 0,
+      "risk_minibatches": 0,
+      "missing_transition_keys": 0,
+      "reward_sum": -1398.1422738934632,
+      "elapsed_seconds": 18.86345550499982,
+      "simulation_seconds": 200.0,
+      "measurement_window_indices": [
+        100,
+        200
+      ],
+      "measurement_steps": 100,
+      "awt_lane_time_mean_seconds": 0.02578125,
+      "aql_lane_time_mean_vehicles": 0.050625,
+      "junction_entries_in_window": 192,
+      "unique_collision_vehicle_ids_in_window": 0,
+      "collision_vehicle_ids_per_junction_entry_percent": 0.0,
+      "unique_actual_collision_vehicles_total": 13,
+      "unique_actual_junction_collision_vehicles_total": 2,
+      "junction_collision_pair_events_in_window": 0,
+      "collision_pair_events_per_junction_entry_percent": 0.0,
+      "unique_training_proxy_vehicles": 44,
+      "departures_after_reset": 626,
+      "arrivals_after_reset": 197,
+      "vehicles_remaining": 516,
+      "risk_safe_buffer": 74,
+      "risk_collision_buffer": 44,
+      "actor_parameters_changed": true,
+      "risk_parameters_changed": false,
+      "last_losses": {
+        "step": 150,
+        "q_loss": 84.92283630371094,
+        "a_loss": -0.011188333854079247,
+        "alpha_loss": -3.5367798805236816
+      }
+    },
+    {
+      "episode": 1,
+      "seed": 1,
+      "sumo_seed": 2,
+      "stage": "training pilot",
+      "training_conflict_proxy": true,
+      "risk_at_inference": true,
+      "control_steps": 174,
+      "transitions": 768,
+      "nonterminal_transitions": 506,
+      "terminal_transitions": 262,
+      "sac_updates": 3,
+      "risk_update_calls": 0,
+      "risk_minibatches": 0,
+      "missing_transition_keys": 0,
+      "reward_sum": -989.2046007639735,
+      "elapsed_seconds": 20.16288956399967,
+      "simulation_seconds": 200.0,
+      "measurement_window_indices": [
+        100,
+        200
+      ],
+      "measurement_steps": 100,
+      "awt_lane_time_mean_seconds": 0.06234375,
+      "aql_lane_time_mean_vehicles": 0.0546875,
+      "junction_entries_in_window": 191,
+      "unique_collision_vehicle_ids_in_window": 1,
+      "collision_vehicle_ids_per_junction_entry_percent": 0.5235602094240838,
+      "unique_actual_collision_vehicles_total": 18,
+      "unique_actual_junction_collision_vehicles_total": 1,
+      "junction_collision_pair_events_in_window": 1,
+      "collision_pair_events_per_junction_entry_percent": 0.5235602094240838,
+      "unique_training_proxy_vehicles": 43,
+      "departures_after_reset": 626,
+      "arrivals_after_reset": 211,
+      "vehicles_remaining": 502,
+      "risk_safe_buffer": 150,
+      "risk_collision_buffer": 87,
+      "actor_parameters_changed": true,
+      "risk_parameters_changed": false,
+      "last_losses": {
+        "step": 300,
+        "q_loss": 74.13760375976562,
+        "a_loss": 0.0589774064719677,
+        "alpha_loss": -3.5622177124023438
+      }
+    }
+  ]
+}

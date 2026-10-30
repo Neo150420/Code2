@@ -1,0 +1,49 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/workspace/research/.venv/lib/python3.10/site-packages/torch/utils/tensorboard/__init__.py:4: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if not hasattr(tensorboard, "__version__") or LooseVersion(
+***Starting server on port 50871 ***
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (748ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.13s
+ TraCI-Duration: 1.10s
+ Real time factor: 0.886525
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Namespace(dvc=device(type='cpu'), EnvIdex=0, render=False, Loadmodel=False, ModelIdex=100, seed=0, Max_train_steps=500000, save_interval=5, eval_interval=2500, update_every=50, gamma=0.99, net_width=256, a_lr=0.0003, c_lr=0.0003, batch_size=256, alpha=0.12, adaptive_alpha=True, d_model=128, nhead=4, num_layers=2, buffer_size=10000, risk_model_path=10000, load_risk_model=0, epochs=1, max_e_steps=25)
+Not loading pre trained risk prediction models, training will start from scratch
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Random Seed: 0
+current logging run number for unsignalizedIntersections :  0
+logging at : Train_logs/unsignalizedIntersections/SAC_unsignalizedIntersections_log_0.csv
+tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
+start time: 17:36:12
+save model
+Traceback (most recent call last):
+  File "/workspace/research/SAC-RWB/train_sac.py", line 274, in <module>
+    main()
+  File "/workspace/research/SAC-RWB/train_sac.py", line 238, in main
+    agent.save(env_name, int(total_steps/opt.steps), run_num)
+AttributeError: 'Namespace' object has no attribute 'steps'
+Error: tcpip::Socket::recvAndCheck @ recv: peer shutdown
+Quitting (on error).
+malloc_consolidate(): unaligned fastbin chunk detected

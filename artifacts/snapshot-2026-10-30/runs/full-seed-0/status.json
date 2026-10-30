@@ -1,0 +1,38 @@
+{
+  "experiment": "corrected reference-asset SAC-RWB; exact paper reproduction unverified",
+  "episodes_target": 500,
+  "training_directory": "/workspace/Code2/runs/full-seed-0/training",
+  "evaluation_directory": "/workspace/Code2/runs/full-seed-0/evaluation",
+  "manager_pid": 5216,
+  "started_unix": 1793298611.6881583,
+  "device": "cpu",
+  "training_seed": 0,
+  "evaluation_traffic_seeds": [
+    10001,
+    10002,
+    10003
+  ],
+  "stage": "failed",
+  "updated_unix": 1793302826.327211,
+  "command": [
+    "/workspace/research/.venv/bin/python",
+    "/workspace/Code2/baseline.py",
+    "train",
+    "--out",
+    "/workspace/Code2/runs/full-seed-0/training",
+    "--episodes",
+    "500",
+    "--horizon",
+    "1000",
+    "--warmup",
+    "500",
+    "--seed",
+    "0",
+    "--resume",
+    "/workspace/Code2/runs/full-seed-0/training/resume.pt"
+  ],
+  "child_pid": 5217,
+  "failed_stage": "training",
+  "exit_code": 1,
+  "log": "/workspace/Code2/runs/full-seed-0/training.log"
+}

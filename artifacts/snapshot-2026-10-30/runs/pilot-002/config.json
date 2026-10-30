@@ -1,0 +1,26 @@
+{
+  "mode": "train",
+  "out": "/workspace/Code2/runs/pilot-002",
+  "checkpoint": null,
+  "device": "cpu",
+  "episodes": 3,
+  "horizon": 1000,
+  "warmup": 500,
+  "seed": 0,
+  "sumo_seed": 1,
+  "update_every": 200,
+  "threads": 2,
+  "original_paper_reproduced": false,
+  "protocol": "corrected_reference_assets_v1",
+  "original_assets": {
+    "upstream": "https://github.com/hank111525/SAC-RWB",
+    "commit": "f60cdbadc8b65cf4699edc6566af7936ff02fba6",
+    "sha256": {
+      "real_data/osm.sumocfg": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f",
+      "real_data/CSeditClean_1.net_threelegs.xml": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4",
+      "real_data/newroute1220_start0.xml": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    }
+  },
+  "metric_note": "Lane-time queue/wait averages and unique collision-involved vehicle IDs per junction entry; not guaranteed identical to paper CR.",
+  "simulator_horizon_includes_reset_warmup": true
+}

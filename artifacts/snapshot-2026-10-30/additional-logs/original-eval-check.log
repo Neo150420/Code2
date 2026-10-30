@@ -1,0 +1,9 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Traceback (most recent call last):
+  File "/workspace/research/SAC-RWB/test_sac.py", line 47, in <module>
+    parser.add_argument('--test_logs_path', type="str", help='Test save path')
+  File "/workspace/research/.python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/argparse.py", line 1435, in add_argument
+    raise ValueError('%r is not callable' % (type_func,))
+ValueError: 'str' is not callable

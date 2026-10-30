@@ -1,0 +1,71 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+***Starting server on port 38845 ***
+Loading net-file from '/workspace/research/SAC-RWB/real_data/CSeditClean_1.net_threelegs.xml' ... done (691ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.06s
+ TraCI-Duration: 1.02s
+ Real time factor: 0.94697
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/research/runs/smoke.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/research/runs/smoke.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '1', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{
+  "label": "component compatibility smoke; no published results reproduced",
+  "model": {
+    "status": "passed",
+    "details": {
+      "torch": "1.13.1+cpu",
+      "cuda_available": false,
+      "predictor_parameters": 1223681,
+      "forward_backward_bce": 0.6889747977256775,
+      "balanced_buffer_training_bce": 0.6924004554748535,
+      "safe_buffer": 128,
+      "risk_buffer": 64,
+      "upstream_action_shape": [
+        3,
+        98
+      ],
+      "intended_action_shape": [
+        3,
+        1
+      ],
+      "synthetic_data_only": true
+    }
+  },
+  "environment": {
+    "status": "passed",
+    "details": {
+      "control_steps": 100,
+      "initial_simulation_step": 26,
+      "final_simulation_step": 126,
+      "observations_checked": 290,
+      "rewards_checked": 290,
+      "elapsed_seconds": 6.767013563000091,
+      "policy": "fixed zero acceleration; not trained",
+      "simulator_version": [
+        20,
+        "SUMO 1.12.0"
+      ],
+      "use_safety_predictor": false
+    }
+  }
+}

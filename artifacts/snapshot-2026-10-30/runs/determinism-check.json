@@ -1,0 +1,6 @@
+{
+  "same_seed_same_checkpoint_prefix_steps": 200,
+  "exact_trace_match": true,
+  "risk_disabled": true,
+  "training_proxy_disabled": true
+}
