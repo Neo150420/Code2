@@ -81,7 +81,7 @@ def write_comparison(out,summaries):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--run',default='full-seed-0')
+    parser.add_argument('--run',default='full-v4-seed-0')
     parser.add_argument('--checkpoints',nargs='+',type=int,required=True)
     parser.add_argument('--pause-training',action='store_true')
     parser.add_argument('--workers',type=int,default=2)

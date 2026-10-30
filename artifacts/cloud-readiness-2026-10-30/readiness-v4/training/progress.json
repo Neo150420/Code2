@@ -1,0 +1,11 @@
+{
+  "episode": 3,
+  "simulation_time": 1026.0,
+  "global_loop_steps": 4000,
+  "sac_updates": 5,
+  "risk_update_calls": 5,
+  "risk_minibatches": 651,
+  "risk_safe_buffer": 3111,
+  "risk_collision_buffer": 3302,
+  "elapsed_seconds": 380.63993868800026
+}

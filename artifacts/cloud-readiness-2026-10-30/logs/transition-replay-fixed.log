@@ -1,0 +1,31 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+***Starting server on port 58005 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (684ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.03s
+ TraCI-Duration: 1.00s
+ Real time factor: 0.97371
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/transition-replay-fixed/episode-0008/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '9', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/workspace/Code2/runs/transition-replay-fixed/episode-0008/simulation.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '9', '-S', '--no-warnings']
+ Retrying in 1 seconds
+{"episode": 8, "seed": 8, "sumo_seed": 9, "stage": "full training", "training_conflict_proxy": true, "risk_at_inference": true, "control_steps": 1000, "transitions": 70619, "nonterminal_transitions": 69441, "terminal_transitions": 1178, "sac_updates": 5, "risk_update_calls": 5, "risk_minibatches": 1422, "missing_transition_keys": 0, "reward_sum": -226780.2643007086, "unmapped_control_exit_transitions": 1, "elapsed_seconds": 783.0694462859992, "simulation_seconds": 1026.0, "measurement_window_indices": [500, 1000], "measurement_steps": 500, "awt_lane_time_mean_seconds": 124.93302083333333, "aql_lane_time_mean_vehicles": 0.5895, "junction_entries_in_window": 392, "unique_collision_vehicle_ids_in_window": 0, "collision_vehicle_ids_per_junction_entry_percent": 0.0, "unique_actual_collision_vehicles_total": 93, "unique_actual_junction_collision_vehicles_total": 1, "junction_collision_pair_events_in_window": 0, "collision_pair_events_per_junction_entry_percent": 0.0, "unique_training_proxy_vehicles": 214, "departures_after_reset": 3455, "arrivals_after_reset": 1260, "vehicles_remaining": 2282, "risk_safe_buffer": 6406, "risk_collision_buffer": 6017, "actor_parameters_changed": true, "risk_parameters_changed": true, "last_losses": {"step": 9000, "q_loss": 99.2378158569336, "a_loss": 0.539711594581604, "alpha_loss": 0.12643173336982727, "risk_loss": 0.4011442767795419}}

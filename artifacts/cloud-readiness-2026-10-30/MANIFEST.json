@@ -1,0 +1,710 @@
+{
+  "files": [
+    {
+      "path": "SNAPSHOT.json",
+      "bytes": 808,
+      "sha256": "f248753f12be3c55795c35430dbfe4f7a588d9ebc4506ef9d29edaa79b145323"
+    },
+    {
+      "path": "logs/readiness-v4-resume.log",
+      "bytes": 2957,
+      "sha256": "4266f2b71355efe01330bcbae76621acf6b253199f88d97e1f542670c77a7d6e"
+    },
+    {
+      "path": "logs/readiness-v4-training.log",
+      "bytes": 8098,
+      "sha256": "c42f81f90cd9e242ea0067831af45a279852c09ee0c67b64d8e1358058615c37"
+    },
+    {
+      "path": "logs/readiness-v4-validation-cp3.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/readiness-v4-validation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/transition-fix-tests-final.log",
+      "bytes": 2044,
+      "sha256": "5c6b190f7342f6ba6310df8b166f67269b617332df7e95446b21a99ccb935d83"
+    },
+    {
+      "path": "logs/transition-replay-fixed.log",
+      "bytes": 2922,
+      "sha256": "585dbf86d0ff3847cf2ee6de72c30347780ea75274f74366d5a82ea3fcaf0659"
+    },
+    {
+      "path": "logs/transition-replay-original.log",
+      "bytes": 3905,
+      "sha256": "4263fad52f85c4e5946bea41eb6a45defe903d676dfe4b3959fbf5f1948875b9"
+    },
+    {
+      "path": "logs/transition-replay-v4-final.log",
+      "bytes": 2930,
+      "sha256": "0c34c69fc59c10a964c351c7c17c46a64ebba196f2839d10c5afaf82698b021d"
+    },
+    {
+      "path": "readiness-v4/readiness-report.json",
+      "bytes": 1254,
+      "sha256": "e6f3dbd6fa5f64df32811b9fcc596330c4b07a826052007964d369f4eb4593ed"
+    },
+    {
+      "path": "readiness-v4/training/checkpoint-0001.pt",
+      "bytes": 11545123,
+      "sha256": "3d33c1710e27ff7ee16f90fc03dcfeaea2cd04f1261985b35b273544cab56a6a"
+    },
+    {
+      "path": "readiness-v4/training/checkpoint-0002.pt",
+      "bytes": 11545571,
+      "sha256": "31defdf9e37bfb57194c61296585667f89f7951a22c6bcf48628484f6c5547e5"
+    },
+    {
+      "path": "readiness-v4/training/checkpoint-0003.pt",
+      "bytes": 11546019,
+      "sha256": "58e021e85516c92cb62f7d48749093554030a87ea77868d8074d67d2d1cfaa3a"
+    },
+    {
+      "path": "readiness-v4/training/checkpoint-0004.pt",
+      "bytes": 11547619,
+      "sha256": "adf83c096b28e230d15bcc4e97b70bf5c3a6b1c31a96cfa041c20a2221f994e5"
+    },
+    {
+      "path": "readiness-v4/training/config.json",
+      "bytes": 1635,
+      "sha256": "5d67269b7bc78a80976ced1d6e4ff2e3d9a8102ead8aece70a7c4d10d053303d"
+    },
+    {
+      "path": "readiness-v4/training/episode-0000/losses.json",
+      "bytes": 812,
+      "sha256": "539c6907233f030bda42f032d4f0b3d072cfabe2a8aa6587ff5154f0741bbbb2"
+    },
+    {
+      "path": "readiness-v4/training/episode-0000/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "73d0915fd2f675a4a6a18bb213c0d303b23da292f8d3eec6e7d66a95a3210a46"
+    },
+    {
+      "path": "readiness-v4/training/episode-0000/steps.jsonl",
+      "bytes": 234142,
+      "sha256": "a122315b62ff221d01dabbf311894b1bd085e512e0d8f28afdeb28dd70abbe3e"
+    },
+    {
+      "path": "readiness-v4/training/episode-0000/summary.json",
+      "bytes": 1498,
+      "sha256": "3b86080cb4856f15ac004dbf6892468943aa4460030d63499c5acbd3f8b97295"
+    },
+    {
+      "path": "readiness-v4/training/episode-0000/sumolog",
+      "bytes": 1106,
+      "sha256": "8d67855d6e77599771d844d2a126d4311a93d1edcc96467c9a2c6fe2d2777d82"
+    },
+    {
+      "path": "readiness-v4/training/episode-0001/losses.json",
+      "bytes": 846,
+      "sha256": "2a15fc471f8c5b804c39e45370f8b3b49bf16f982d9b3f26843f68eefe6c450a"
+    },
+    {
+      "path": "readiness-v4/training/episode-0001/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "d0682ebd69b6b153ab82f82d905abbd5dd797a2859e7939d135d68b1910ede4a"
+    },
+    {
+      "path": "readiness-v4/training/episode-0001/steps.jsonl",
+      "bytes": 235270,
+      "sha256": "e52dd342f6216086dec78dcaa0f2fcccf87fa0ee33ce6bdf910c4138fcbc042f"
+    },
+    {
+      "path": "readiness-v4/training/episode-0001/summary.json",
+      "bytes": 1533,
+      "sha256": "2d38f806763aa108344173ad4be4b7031205303a8d83f2f072a7b4c07ca5d1a8"
+    },
+    {
+      "path": "readiness-v4/training/episode-0001/sumolog",
+      "bytes": 1106,
+      "sha256": "ec7b09fdda4a534991907b05dbaee7e905ad5a7b2258a3ffa2e8674b236462ea"
+    },
+    {
+      "path": "readiness-v4/training/episode-0002/losses.json",
+      "bytes": 845,
+      "sha256": "b8bef25bf39b2e1406a25c20c30ea4cb508046b2c3da4b45e3bd3b2d4c03f349"
+    },
+    {
+      "path": "readiness-v4/training/episode-0002/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "c5293e31fc5ef03a9b0b2594fff5e2ac90b6679df25915c2f9821758216521d1"
+    },
+    {
+      "path": "readiness-v4/training/episode-0002/steps.jsonl",
+      "bytes": 235045,
+      "sha256": "d820dfc5dffacc8d5c8ba20abf0570f9b2c2a8475933062ba8bd19dc55fa51cc"
+    },
+    {
+      "path": "readiness-v4/training/episode-0002/summary.json",
+      "bytes": 1533,
+      "sha256": "05d43e43a2c5d17c06c66a51edf104ad55702d5b8c3cb3ca6bcd8c50a572f880"
+    },
+    {
+      "path": "readiness-v4/training/episode-0002/sumolog",
+      "bytes": 1106,
+      "sha256": "bbc949c4f353dacbbc0250c3d8a1935773aa336252b1fffda298ff81f5e0d7ca"
+    },
+    {
+      "path": "readiness-v4/training/episode-0003/losses.json",
+      "bytes": 840,
+      "sha256": "d7bb30c9540ea26d2d09548eb48ab9b0a50dc708074b362dc46624730dc47356"
+    },
+    {
+      "path": "readiness-v4/training/episode-0003/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "e9cadf1c7fa9d6acd30fe320345738b0ccf11240a2c04149e741d3b51c869bde"
+    },
+    {
+      "path": "readiness-v4/training/episode-0003/steps.jsonl",
+      "bytes": 229723,
+      "sha256": "c8255e937bb21548cae64424b18b47ed5112fc6a9599d935f29109f7c268ec0a"
+    },
+    {
+      "path": "readiness-v4/training/episode-0003/summary.json",
+      "bytes": 1537,
+      "sha256": "44913b533e61afa6d7ce75348cf9e7eb3c0f136ff18987a33007f26d3c3f0779"
+    },
+    {
+      "path": "readiness-v4/training/episode-0003/sumolog",
+      "bytes": 1106,
+      "sha256": "7645cd56e0985376bcde194ed68803f4e0310a37140b8720aafc9845a7f4b320"
+    },
+    {
+      "path": "readiness-v4/training/progress.json",
+      "bytes": 251,
+      "sha256": "b2b88d2a46b2c3123e63a9470709e14d0c9617825d0b50e7a6614222cc7e9c16"
+    },
+    {
+      "path": "readiness-v4/training/results.json",
+      "bytes": 8743,
+      "sha256": "e0411836e08bcc66049687c535d6c8562b85f2ac26449e5fce6ca10a495c09d9"
+    },
+    {
+      "path": "readiness-v4/training/resume-config.json",
+      "bytes": 1744,
+      "sha256": "9cafda8ee441a786030ca4ff30f92c9ab60932d217b5aeda6788a6e794018272"
+    },
+    {
+      "path": "readiness-v4/training/resume.pt",
+      "bytes": 96518887,
+      "sha256": "5a081045652eb5aad4b32fba69f6f4220d4838a39d04a2bb07de31b59b624c96"
+    },
+    {
+      "path": "readiness-v4/training/source/Env.py",
+      "bytes": 46867,
+      "sha256": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db"
+    },
+    {
+      "path": "readiness-v4/training/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "readiness-v4/training/source/baseline.py",
+      "bytes": 21900,
+      "sha256": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518"
+    },
+    {
+      "path": "readiness-v4/training/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "readiness-v4/training/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/config.json",
+      "bytes": 1841,
+      "sha256": "3c6b253fc322fbf86d1a70ef56f88061d4fcc1051fe236dfbb23b0f2d4b88eb3"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0000/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0000/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "2133fb2d0d5b963eefcf81eeb51a2e24f83753f4c24f808bf678b0c637586b79"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0000/steps.jsonl",
+      "bytes": 222060,
+      "sha256": "28c1f5ead7d2221e509cf36429309a11875446b1ea97375f03e0c805e5870710"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0000/summary.json",
+      "bytes": 1356,
+      "sha256": "5275d2609b63dcccf5611cf26e952fcebbf3cc33d8cf11b0dcdf0a03d4feb431"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0000/sumolog",
+      "bytes": 1107,
+      "sha256": "1b55cac3c46ed92dd7fd30857e3cac9ba917cc59dd8e40010e0889d1c7d733a9"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0001/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0001/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "13864d7147d89d391956ce861181456d8b68158796663ba6f76b54dd11c0a3ee"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0001/steps.jsonl",
+      "bytes": 226941,
+      "sha256": "a11702ad46a3d39e43204daab0f632ff808fda6dfcc1a2b1df4c2092d29c874b"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0001/summary.json",
+      "bytes": 1352,
+      "sha256": "3d6db4c7551be8e5d099cff8c01757aaf0a4bd1117eb1bbd8025b96f6e420af3"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0001/sumolog",
+      "bytes": 1106,
+      "sha256": "f9a7581109e631ba5049f53ec084fa1e842707c489b2ab2f8e8314128a33b41c"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0002/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0002/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "32a98ca69662db3efcb67b50305c46d0221400bd2409f9040b0e24a8865707e0"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0002/steps.jsonl",
+      "bytes": 222975,
+      "sha256": "33fcf11be9004e3e856e1c5edc7b41349bcea354465aaec7a5a6c41db5712784"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0002/summary.json",
+      "bytes": 1354,
+      "sha256": "0af84ecd768629d932c216307c2393b5627ac38d60d57274837e1a981c8005ab"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/episode-0002/sumolog",
+      "bytes": 1105,
+      "sha256": "04b27de8f54c041dfb909d0f778215dcf593d18e0acba5c0fd42cadfc0dcf2d0"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/progress.json",
+      "bytes": 243,
+      "sha256": "dd7e0e4ecb87d2d40a21c91a90a48526ad98ae69bbc6e4179f4c24cb92f93485"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/results.json",
+      "bytes": 6531,
+      "sha256": "8aedba75529f53acbef1c50ffa58bbbca3f1e6f836b353fbd8fd56c9fb3e9750"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/source/Env.py",
+      "bytes": 46867,
+      "sha256": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/source/baseline.py",
+      "bytes": 21900,
+      "sha256": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/evaluation.log",
+      "bytes": 7861,
+      "sha256": "12ce2c955448f518e754c21cc11385ed8dcb65d6c5a70c0c7cc6ed2c4b4f0748"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0001/summary.json",
+      "bytes": 5072,
+      "sha256": "862330a504af7ba990892aefb66aa0d60cc970fa31a4af816826e6a7eabd1b3c"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/config.json",
+      "bytes": 1841,
+      "sha256": "da2539904bdb099193b6d0e7ff643afd323d1eaaa8fe350bba43655ca08fa3e5"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0000/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0000/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "2133fb2d0d5b963eefcf81eeb51a2e24f83753f4c24f808bf678b0c637586b79"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0000/steps.jsonl",
+      "bytes": 219872,
+      "sha256": "8232e454fe8c8223f252119bd6469e71cd534b08bed7edae99778419b42d8d56"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0000/summary.json",
+      "bytes": 1323,
+      "sha256": "3e590973c8bc162133c3a79af4bddee004b510a18d437449e2649934672f8896"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0000/sumolog",
+      "bytes": 1107,
+      "sha256": "3cc689f5d86ee5c43943d91ac1ebc5c9bf1964237c02652ad2b0971fab944837"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0001/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0001/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "13864d7147d89d391956ce861181456d8b68158796663ba6f76b54dd11c0a3ee"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0001/steps.jsonl",
+      "bytes": 223586,
+      "sha256": "fc1fda64600f8ff30659c33337fd75406ae6b553a84bc01988c77c7b759f0833"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0001/summary.json",
+      "bytes": 1356,
+      "sha256": "0ec0759d4d21064af66668dbf42f4a8bf03aec877f0dcc638bd5625c57e6beb5"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0001/sumolog",
+      "bytes": 1105,
+      "sha256": "3a7dcc565f2a3ac5c7db1ca38f22e516ab91d16742b7fa5bdbc58cc125743559"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0002/losses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0002/simulation.sumocfg",
+      "bytes": 767,
+      "sha256": "32a98ca69662db3efcb67b50305c46d0221400bd2409f9040b0e24a8865707e0"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0002/steps.jsonl",
+      "bytes": 220330,
+      "sha256": "87d0b4dcb1fa85c8324b4dc937befa60aa3860692f2e998695637b997143968d"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0002/summary.json",
+      "bytes": 1321,
+      "sha256": "2dba2fb3f0609d0df3dcef8f06d450718fc4071b977abad4549f61bb04d12f07"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/episode-0002/sumolog",
+      "bytes": 1105,
+      "sha256": "88e125c70998aaf393245361104fa7143df551b239be53ee185662a99d081ab8"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/progress.json",
+      "bytes": 243,
+      "sha256": "709ef7f17eb4f1bee65f5a01c4b8083090ccf43c750c8eca86ee85c4f9f4bc47"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/results.json",
+      "bytes": 6469,
+      "sha256": "289d0832f84c38c3039e87b611a0d7801c4ab6fb18a29fa5d0a513bcd352ef0d"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/source/Env.py",
+      "bytes": 46867,
+      "sha256": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/source/baseline.py",
+      "bytes": 21900,
+      "sha256": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/evaluation.log",
+      "bytes": 7799,
+      "sha256": "457865577ad0e61e84a60508e0203a6fa5e9203e5d390588051aad49c38e35b6"
+    },
+    {
+      "path": "readiness-v4/validation/checkpoint-0003/summary.json",
+      "bytes": 4998,
+      "sha256": "6c05cec855633b3158734e1667eee1aa741541eeafd14c2ec6544c5bfb184435"
+    },
+    {
+      "path": "readiness-v4/validation/comparison.csv",
+      "bytes": 361,
+      "sha256": "bb6b76ded15f07863f0f9cd0d92f4702613502e380a16973753f4ccbe13173d8"
+    },
+    {
+      "path": "readiness-v4/validation/comparison.md",
+      "bytes": 930,
+      "sha256": "11c277f6c602bf4cd53f784ebace0f4aa3235307006d578ca7ffde785c26a25a"
+    },
+    {
+      "path": "readiness-v4/validation/paired-deltas.json",
+      "bytes": 740,
+      "sha256": "51a829b813eda567ed1993164707b87bcfca9420c25a1501c05e18634cea1cb0"
+    },
+    {
+      "path": "readiness-v4/validation/status.json",
+      "bytes": 294,
+      "sha256": "7def3cbdc8bf97dca9046e6620979e6260efe5219fbf8db293564cfe680824df"
+    },
+    {
+      "path": "readiness-v4/validation/summary.json",
+      "bytes": 11435,
+      "sha256": "faf8cd84c39fe28bafda53a7194fbea523a8993a5dfb10aeff75f3e34d37fbc9"
+    },
+    {
+      "path": "resume-source-guard/command.log",
+      "bytes": 760,
+      "sha256": "b96741a3623f0d1025e27e09a4f6dcdd687792b57bedad857ae2aab98cdb3e46"
+    },
+    {
+      "path": "resume-source-guard/result.json",
+      "bytes": 112,
+      "sha256": "d0d4fd789387b8f9dadebdfb94fe1b13a3c3ef7f15a02899f0bd5d1952036153"
+    },
+    {
+      "path": "transition-replay-fixed/INTERPRETATION.json",
+      "bytes": 383,
+      "sha256": "2d0c870d36a179265d1cf9c5f6f44466980a46990f73abfa23697a2485baaa4f"
+    },
+    {
+      "path": "transition-replay-fixed/diagnostic-config.json",
+      "bytes": 724,
+      "sha256": "38e70daa38bd885836a315bdb5dd607166aadd314076e7f9323f43a6303b2de9"
+    },
+    {
+      "path": "transition-replay-fixed/episode-0008/losses.json",
+      "bytes": 848,
+      "sha256": "6802d7c137928b164c9e2a19001abd69239cbf108bf41fee8389331330a8ab3b"
+    },
+    {
+      "path": "transition-replay-fixed/episode-0008/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "5be4ee05eda4270401687bb122582c8c233d1ce4231e5594b19b583dfbe51cb8"
+    },
+    {
+      "path": "transition-replay-fixed/episode-0008/steps.jsonl",
+      "bytes": 217227,
+      "sha256": "feb959e773aee856f3928f707e3782764ca357c7257df4a0a862ce4c55644b8a"
+    },
+    {
+      "path": "transition-replay-fixed/episode-0008/summary.json",
+      "bytes": 1498,
+      "sha256": "cc9aa96c62f5a47203b79d3befbe65875e1ef10363282945fe9f89d705322e50"
+    },
+    {
+      "path": "transition-replay-fixed/episode-0008/sumolog",
+      "bytes": 1103,
+      "sha256": "7d795bee0d45c61c7e6a0404c7e276f5df97accd1d268e9990e3649154153075"
+    },
+    {
+      "path": "transition-replay-fixed/progress.json",
+      "bytes": 251,
+      "sha256": "0cfa7c23d56fe806421250eb962e9c9d81600d3e1de6a3399ec427a378841ab4"
+    },
+    {
+      "path": "transition-replay-fixed/result.json",
+      "bytes": 1634,
+      "sha256": "7f31404e04e51db4c2be1ccb29fb1fa12d35d83bf8a77f52193251a8e657c3de"
+    },
+    {
+      "path": "transition-replay-fixed/source/Env.py",
+      "bytes": 46612,
+      "sha256": "5e318a659ba96c7bffdcc0eacc15a6739655e3e7292af3530f10a99c0bc326bd"
+    },
+    {
+      "path": "transition-replay-fixed/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "transition-replay-fixed/source/baseline.py",
+      "bytes": 21900,
+      "sha256": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518"
+    },
+    {
+      "path": "transition-replay-fixed/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "transition-replay-fixed/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "transition-replay-fixed/transition-events.jsonl",
+      "bytes": 826,
+      "sha256": "c946109b680c644d37ee3957c7b02cf9fd5131a0fe4547319e938c3fe0f0cd47"
+    },
+    {
+      "path": "transition-replay-original/diagnostic-config.json",
+      "bytes": 689,
+      "sha256": "e739947db64299effe5d024f7202c23b1497bba99c0718642062e5ef08f7ce90"
+    },
+    {
+      "path": "transition-replay-original/episode-0008/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "5be4ee05eda4270401687bb122582c8c233d1ce4231e5594b19b583dfbe51cb8"
+    },
+    {
+      "path": "transition-replay-original/episode-0008/steps.jsonl",
+      "bytes": 49627,
+      "sha256": "e1cf6fb018ba2a31c82d2ce43873ea2d5f2aa9298cba6960270aaa9b0ba90a74"
+    },
+    {
+      "path": "transition-replay-original/episode-0008/sumolog",
+      "bytes": 1096,
+      "sha256": "0bf43ac487439b473be42c05a7f81cfadf24ddcbc1bec6668f00a173ae32694b"
+    },
+    {
+      "path": "transition-replay-original/missing-transitions.json",
+      "bytes": 895,
+      "sha256": "3794e752568d790f729d638aa548d627bcbd45f143322e70d648e9d6b4bcf2fc"
+    },
+    {
+      "path": "transition-replay-original/progress.json",
+      "bytes": 249,
+      "sha256": "c4cd16f77285661e9a43e2d7e6288416702902a3f78a783375e8d2e96964fb6e"
+    },
+    {
+      "path": "transition-replay-original/source/Env.py",
+      "bytes": 44489,
+      "sha256": "c0f34739436b391ee3854e1604b7eeb4dad0b5c88fa0adba92696e3b543b91b5"
+    },
+    {
+      "path": "transition-replay-original/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "transition-replay-original/source/baseline.py",
+      "bytes": 21630,
+      "sha256": "f0c1f148a48f2e59f5b58034915c2a20d427cde85116faedd9f5a9928d54ca5b"
+    },
+    {
+      "path": "transition-replay-original/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "transition-replay-original/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "transition-replay-v4-final/diagnostic-config.json",
+      "bytes": 724,
+      "sha256": "6a1599e5ed006e4256de67ab673225662835864c951bb1e2ce01b4dca60ad20d"
+    },
+    {
+      "path": "transition-replay-v4-final/episode-0008/losses.json",
+      "bytes": 847,
+      "sha256": "bc972b693650ff51888ef7fba9771c8912c7fcf96fe3192a9792139ce9ba5d67"
+    },
+    {
+      "path": "transition-replay-v4-final/episode-0008/simulation.sumocfg",
+      "bytes": 764,
+      "sha256": "5be4ee05eda4270401687bb122582c8c233d1ce4231e5594b19b583dfbe51cb8"
+    },
+    {
+      "path": "transition-replay-v4-final/episode-0008/steps.jsonl",
+      "bytes": 217245,
+      "sha256": "f041df32e99717c8aad66a3610c341e1746eed0c26b4a3db8db136af5c4057f0"
+    },
+    {
+      "path": "transition-replay-v4-final/episode-0008/summary.json",
+      "bytes": 1500,
+      "sha256": "a8d83d6565b99aeba7245a771ea516943ebe495a36e4053881784e8f07e1e05d"
+    },
+    {
+      "path": "transition-replay-v4-final/episode-0008/sumolog",
+      "bytes": 1103,
+      "sha256": "41ca60a3962323932c6f285ec59d8f6d9e29c00c411c13d222ead9a4c047814a"
+    },
+    {
+      "path": "transition-replay-v4-final/progress.json",
+      "bytes": 251,
+      "sha256": "b1e44b08e280e32093602026e59297cb75e67134e5315c076ecba368a9031c83"
+    },
+    {
+      "path": "transition-replay-v4-final/result.json",
+      "bytes": 1636,
+      "sha256": "d7d89661a5e2d5603cefd6351c67bb1fa195b4025a9026b037fe4175a67e2390"
+    },
+    {
+      "path": "transition-replay-v4-final/source/Env.py",
+      "bytes": 46867,
+      "sha256": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db"
+    },
+    {
+      "path": "transition-replay-v4-final/source/algos/transformer_risk_model.py",
+      "bytes": 11986,
+      "sha256": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5"
+    },
+    {
+      "path": "transition-replay-v4-final/source/baseline.py",
+      "bytes": 21900,
+      "sha256": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518"
+    },
+    {
+      "path": "transition-replay-v4-final/source/core/sumo_interface.py",
+      "bytes": 7304,
+      "sha256": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+    },
+    {
+      "path": "transition-replay-v4-final/source/sac/SAC.py",
+      "bytes": 6296,
+      "sha256": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52"
+    },
+    {
+      "path": "transition-replay-v4-final/transition-events.jsonl",
+      "bytes": 939,
+      "sha256": "2106c019d578dff23d21d6202bd71788bbc69121b17fcce231844f9c8e012b77"
+    }
+  ],
+  "total_bytes": 146171021
+}

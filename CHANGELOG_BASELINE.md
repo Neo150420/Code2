@@ -4,7 +4,31 @@ Source: hank111525/SAC-RWB, commit f60cdbadc8b65cf4699edc6566af7936ff02fba6.
 The original is preserved at /workspace/research/SAC-RWB. This directory is Neo's
 experimental implementation. Authors' model/environment code is adapted here;
 no authors' weights or reproduced results are claimed. No upstream LICENSE was
-present; no code has been published/pushed by this task.
+present. Neo's Code2 snapshot was pushed at commit 611a7ab.
+
+## Protocol v4: collision-teleport transition repair
+
+The v3 episode-9 failure was reproduced from the full episode-8 checkpoint.
+At simulation time 288 s, vehicle `877763350#5.48` collided at `:499_3_0` and
+started/ended a SUMO collision teleport onto outgoing edge `978615347#1`.
+That outgoing edge has no selected next junction. The observation loop skipped
+it, so its previous action had no reward/terminal transition.
+
+- Complete this access-control episode using its saved approach context, the
+  existing reward equation, current risk score and previous conflict flag.
+  Mark terminal, set terminal distance to zero and retire the old virtual ID.
+  Preserve the vehicle in SUMO; do not invent a safe label for this handoff.
+  Missing/inconsistent approach context still raises an error.
+- Attribute physical collision participants using the collision event's recorded
+  lane. Post-teleport road IDs incorrectly excluded the collider from the same
+  junction's collision set/risk outcome labels. Both participants of an event
+  inside a selected junction are now included; approach-road and other-junction
+  events remain excluded from this selected-junction label.
+- Record unmapped control exits explicitly in step logs and episode summaries.
+- Use protocol `corrected_reference_assets_v4` for fresh training. Keep original
+  v3 artifacts unchanged. `diagnose_transition.py --allow-code-change` is an
+  explicitly labelled diagnostic replay, never a silent continuation of v3.
+  Exact paper scenario/protocol alignment remains unresolved.
 
 ## Correctness repairs
 

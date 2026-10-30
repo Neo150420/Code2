@@ -18,7 +18,7 @@ ROOT=Path(__file__).resolve().parent
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--name',default='full-seed-0')
+    parser.add_argument('--name',default='full-v4-seed-0')
     parser.add_argument('--episodes',type=int,default=500)
     parser.add_argument('--seed',type=int,default=0)
     parser.add_argument('--eval-sumo-seed',type=int,default=10001)

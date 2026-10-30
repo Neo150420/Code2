@@ -569,6 +569,7 @@ class Env(gym.Env):
 
     def step_once(self, action={}, safe_reward_dict=None):
         self._print_debug('step')
+        self.last_unmapped_control_exit_ids = set()
         self.new_departed = set()  # 可能是新离开的车辆
         self.sumo_interface.set_max_speed_all(10)  # 设置默认车辆最大速度
         self._traffic_light_program_update()  # 信号灯设置为绿色
@@ -647,13 +648,15 @@ class Env(gym.Env):
                 self.rl_vehicles.pop(veh.id)
             self.vehicles.pop(veh.id)
 
-        junction_colliding_vehicles = set()
-        for veh_id in sim_res.colliding_vehicles_ids:
-            current_road_id = self.sumo_interface.get_vehicle_edge(veh_id)
-            if current_road_id.startswith(':'):
-                JuncID, ego_dir = self.map.get_veh_moving_direction(self.vehicles[veh_id])
-                if JuncID in self.junction_list and veh_id in self.vehicles:
-                    junction_colliding_vehicles.add(self.vehicles[veh_id])
+        # Collision teleports may already have moved the collider onto an
+        # outgoing edge. Attribute the event using its recorded collision lane,
+        # not either vehicle's post-collision location.
+        actual_junction_ids = self._collision_ids_at_controlled_junctions(
+            self.sumo_interface.tc.simulation.getCollisions())
+        junction_colliding_vehicles = {
+            self.vehicles[vid] for vid in actual_junction_ids | self.last_proxy_ids
+            if vid in self.vehicles
+        }
 
         # for veh_id, veh in self.vehicles.items():
         #     if veh not in self.new_collided and veh not in self.new_arrived: # 存在性判断
@@ -665,10 +668,7 @@ class Env(gym.Env):
         #                 # self.sumo_interface.tc.vehicle.remove(veh_id)
 
         self.new_collided = junction_colliding_vehicles
-        self.last_actual_junction_collision_ids = {
-            veh.id for veh in junction_colliding_vehicles
-            if veh.id in self.last_actual_collision_ids
-        }
+        self.last_actual_junction_collision_ids = actual_junction_ids
 
         self.conflict_vehids = self.new_collided
         # 更新模型数据
@@ -767,7 +767,17 @@ class Env(gym.Env):
 
             JuncID, ego_dir = self.map.get_veh_moving_direction(rl_veh)
             if len(JuncID) == 0 or JuncID not in self.junction_list:
-                # skip the invalid JuncID
+                # A collision teleport (or completed crossing) can put an acted-on
+                # vehicle onto an outgoing edge. End its previous access-control
+                # episode even though the outgoing edge has no controlled junction.
+                if virtual_id in action:
+                    terminal_obs, reward = self._finish_unmapped_control_exit(
+                        rl_veh, virtual_id, action[virtual_id], safe_reward_dict,
+                        new_obs.get(virtual_id))
+                    obs[virtual_id] = terminal_obs
+                    new_obs[virtual_id] = terminal_obs.copy()
+                    rewards[virtual_id] = reward
+                    dones[virtual_id] = True
                 continue
 
             obs_control_queue_length = []
@@ -885,6 +895,36 @@ class Env(gym.Env):
                 np.array(dict_tolist(rewards)).max()) + ' min reward: ' + str(np.array(dict_tolist(rewards)).min()))
         # obs有队列长度8，等待队列8，inner_list三部分组成
         return obs, rewards, dones, truncated, infos, new_obs
+
+    def _collision_ids_at_controlled_junctions(self, events):
+        ids = set()
+        prefixes = tuple(f':{j}_' for j in self.junction_list)
+        for event in events:
+            if event.lane.startswith(prefixes):
+                ids.update((event.collider, event.victim))
+        return ids
+
+    def _finish_unmapped_control_exit(self, vehicle, key, action, risks, next_observation):
+        """Finish a previously controlled decision using its original approach.
+
+        This is not a new safe/collision outcome label for the risk predictor.
+        Its ordinary arrival/collision labelling remains unchanged.
+        """
+        if key not in self.previous_obs or key not in self.pre_dir_info or next_observation is None:
+            raise RuntimeError(f'Unmapped control exit lacks prior transition context: {key}')
+        junction, directions, real_id = self.pre_dir_info[key]
+        if junction not in self.junction_list or real_id != vehicle.id:
+            raise RuntimeError(f'Unmapped control exit has inconsistent approach context: {key}')
+        reward = self.reward_compute(vehicle, self.previous_obs[key][10:18], action,
+                                     junction, directions[0],
+                                     0.0 if risks is None else risks[key],
+                                     self.pre_TTI_dic.get(key, 0))
+        terminal_obs = np.asarray(next_observation, dtype=np.float32).copy()
+        terminal_obs[0] = 0.0  # Access control has ended; do not use outgoing-edge distance.
+        terminal_obs = self.check_obs_constraint(terminal_obs)
+        self.terminate_veh(key)
+        self.last_unmapped_control_exit_ids.add(vehicle.id)
+        return terminal_obs, reward
 
     def step(self, action={}, safe_reward_dict=None):
         # if len(action) == 0:

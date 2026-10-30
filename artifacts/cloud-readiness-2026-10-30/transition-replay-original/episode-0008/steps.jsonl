@@ -1,0 +1,261 @@
+{"simulation_time": 27.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 28.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 29.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 30.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 31.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 32.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 33.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 34.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 35.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 36.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 37.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 38.0, "controlled": 0, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 39.0, "controlled": 0, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 40.0, "controlled": 0, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 41.0, "controlled": 0, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 42.0, "controlled": 0, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 43.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 44.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 45.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 46.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 47.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 48.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 49.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 50.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 51.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.1"]}
+{"simulation_time": 52.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 53.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 54.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 55.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 56.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 57.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 58.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 59.0, "controlled": 3, "actual_collision_vehicle_ids": ["847825694#3.1", "878066815#5.2"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 60.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 61.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 62.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 63.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 64.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 65.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 66.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 67.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 68.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 69.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 70.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 71.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 72.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 73.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 74.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 75.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 76.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 77.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.4"]}
+{"simulation_time": 78.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 79.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 80.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 81.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 82.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 83.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 84.0, "controlled": 1, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 85.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 86.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 87.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 88.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 89.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 90.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 91.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 92.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 93.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 94.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 95.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 96.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 97.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 98.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 99.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 100.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 101.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763364#0.1"]}
+{"simulation_time": 102.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 103.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 104.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 105.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 106.0, "controlled": 3, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 107.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 108.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 109.0, "controlled": 2, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 110.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 111.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 112.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 113.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 114.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 115.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 116.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 117.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 118.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.15"]}
+{"simulation_time": 119.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489602#4.2", "gneE41.20"]}
+{"simulation_time": 120.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 121.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 122.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 123.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978613913#0.3"]}
+{"simulation_time": 124.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763364#0.3", "gneE41.21"]}
+{"simulation_time": 125.0, "controlled": 8, "actual_collision_vehicle_ids": ["847825694#3.19", "878066815#5.4"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 126.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 127.0, "controlled": 5, "actual_collision_vehicle_ids": ["847825694#3.20", "878066815#5.4"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978613913#0.4"]}
+{"simulation_time": 128.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 129.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.22"]}
+{"simulation_time": 130.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 131.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978615349#0.2"]}
+{"simulation_time": 132.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 133.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 134.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.23"]}
+{"simulation_time": 135.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 136.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763364#0.4"]}
+{"simulation_time": 137.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["436475433#2.2"]}
+{"simulation_time": 138.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489600.1", "gneE41.24"]}
+{"simulation_time": 139.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 140.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 141.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 142.0, "controlled": 6, "actual_collision_vehicle_ids": ["877763358#3.2", "877763358#3.3", "878066815#5.14", "878066815#5.4"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 143.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 144.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 145.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 146.0, "controlled": 7, "actual_collision_vehicle_ids": ["877763358#3.7", "878066815#5.4"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 147.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 148.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.14"]}
+{"simulation_time": 149.0, "controlled": 7, "actual_collision_vehicle_ids": ["877763358#3.14", "878066815#5.4"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 150.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.22", "gneE41.26"]}
+{"simulation_time": 151.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 152.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.14"]}
+{"simulation_time": 153.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["37552734#6.62.8"]}
+{"simulation_time": 154.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 155.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 156.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.28"]}
+{"simulation_time": 157.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 158.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["436475433#2.18"]}
+{"simulation_time": 159.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 160.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 161.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 162.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.29"]}
+{"simulation_time": 163.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 164.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 165.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978613913#0.7"]}
+{"simulation_time": 166.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 167.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.16"]}
+{"simulation_time": 168.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["37552734#6.62.9"]}
+{"simulation_time": 169.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 170.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.31"]}
+{"simulation_time": 171.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 172.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489602#4.5"]}
+{"simulation_time": 173.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870615#1.17", "36870636#12.17"]}
+{"simulation_time": 174.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 175.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763364#0.7"]}
+{"simulation_time": 176.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.32"]}
+{"simulation_time": 177.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 178.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.33"]}
+{"simulation_time": 179.0, "controlled": 4, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 180.0, "controlled": 5, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.18"]}
+{"simulation_time": 181.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 182.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 183.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 184.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763350#5.27"]}
+{"simulation_time": 185.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 186.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 187.0, "controlled": 6, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489602#4.6", "gneE41.35"]}
+{"simulation_time": 188.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 189.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 190.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 191.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 192.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.20"]}
+{"simulation_time": 193.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.36"]}
+{"simulation_time": 194.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["436475433#2.23"]}
+{"simulation_time": 195.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 196.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 197.0, "controlled": 7, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 198.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.37"]}
+{"simulation_time": 199.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 200.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 201.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 202.0, "controlled": 8, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["37722941.3"]}
+{"simulation_time": 203.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.7"]}
+{"simulation_time": 204.0, "controlled": 11, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.22"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 205.0, "controlled": 15, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 206.0, "controlled": 15, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 207.0, "controlled": 14, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 208.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.34", "gneE41.39"]}
+{"simulation_time": 209.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 210.0, "controlled": 14, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["436475433#2.25"]}
+{"simulation_time": 211.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 212.0, "controlled": 14, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 213.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870615#1.22"]}
+{"simulation_time": 214.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 215.0, "controlled": 14, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.41"]}
+{"simulation_time": 216.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489781#11.2", "978613913#0.11"]}
+{"simulation_time": 217.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 218.0, "controlled": 9, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.9", "877763365#6.24"]}
+{"simulation_time": 219.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 220.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.31"]}
+{"simulation_time": 221.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 222.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870615#1.23"]}
+{"simulation_time": 223.0, "controlled": 11, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 224.0, "controlled": 12, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 225.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.43"]}
+{"simulation_time": 226.0, "controlled": 11, "actual_collision_vehicle_ids": ["36978229#6.19", "36978229#6.22", "847825694#3.21", "847825694#3.23"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978613913#0.12"]}
+{"simulation_time": 227.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 228.0, "controlled": 15, "actual_collision_vehicle_ids": ["36978229#6.19", "36978229#6.22", "847825694#3.16", "847825694#3.26"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489781#11.9"]}
+{"simulation_time": 229.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 230.0, "controlled": 12, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.28"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 231.0, "controlled": 12, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.22", "847825694#3.29", "847825694#3.34"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.36", "36870636#12.25"]}
+{"simulation_time": 232.0, "controlled": 10, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.33"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 233.0, "controlled": 13, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.22", "847825694#3.25", "847825694#3.40"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489595#4.11", "436475433#2.28"]}
+{"simulation_time": 234.0, "controlled": 11, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.35"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.45"]}
+{"simulation_time": 235.0, "controlled": 10, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.26"]}
+{"simulation_time": 236.0, "controlled": 10, "actual_collision_vehicle_ids": ["36978229#6.22", "847825694#3.36"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 237.0, "controlled": 13, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.37"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 238.0, "controlled": 13, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 239.0, "controlled": 11, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.43"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489781#11.10"]}
+{"simulation_time": 240.0, "controlled": 15, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.22", "847825694#3.39", "847825694#3.41"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 241.0, "controlled": 19, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 242.0, "controlled": 16, "actual_collision_vehicle_ids": ["36978229#6.19", "36978229#6.22", "847825694#3.31", "847825694#3.52"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.42"]}
+{"simulation_time": 243.0, "controlled": 17, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.47"]}
+{"simulation_time": 244.0, "controlled": 15, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.45", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 245.0, "controlled": 16, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.46"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.27", "877763350#5.39"]}
+{"simulation_time": 246.0, "controlled": 17, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 247.0, "controlled": 16, "actual_collision_vehicle_ids": ["36978229#6.22", "847825694#3.32"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.48"]}
+{"simulation_time": 248.0, "controlled": 21, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.54"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 249.0, "controlled": 21, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.47"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 250.0, "controlled": 22, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 251.0, "controlled": 20, "actual_collision_vehicle_ids": ["36978229#6.22", "847825694#3.42"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763350#5.40"]}
+{"simulation_time": 252.0, "controlled": 21, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.31", "847825694#3.55", "847825694#3.59"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870636#12.28"]}
+{"simulation_time": 253.0, "controlled": 21, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 254.0, "controlled": 20, "actual_collision_vehicle_ids": ["36978229#6.19", "36978229#6.22", "847825694#3.50", "847825694#3.63"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 255.0, "controlled": 21, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["43076363.2"]}
+{"simulation_time": 256.0, "controlled": 23, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.34"]}
+{"simulation_time": 257.0, "controlled": 22, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.19", "36978229#6.22", "847825694#3.44", "847825694#3.51", "847825694#3.60"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.50"]}
+{"simulation_time": 258.0, "controlled": 26, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 259.0, "controlled": 27, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.62"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 260.0, "controlled": 30, "actual_collision_vehicle_ids": ["36978229#6.22", "847825694#3.49"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763350#5.42"]}
+{"simulation_time": 261.0, "controlled": 30, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.61"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 262.0, "controlled": 31, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.22", "847825694#3.53", "847825694#3.67", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 263.0, "controlled": 29, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 264.0, "controlled": 30, "actual_collision_vehicle_ids": ["36978229#6.31", "847825694#3.65"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.13"]}
+{"simulation_time": 265.0, "controlled": 29, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.57", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229489602#4.10"]}
+{"simulation_time": 266.0, "controlled": 27, "actual_collision_vehicle_ids": ["36978229#6.19", "36978229#6.22", "847825694#3.58", "847825694#3.66"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763350#5.43"]}
+{"simulation_time": 267.0, "controlled": 29, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 268.0, "controlled": 32, "actual_collision_vehicle_ids": ["36978229#6.18", "36978229#6.22", "847825694#3.68", "847825694#3.69", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 269.0, "controlled": 30, "actual_collision_vehicle_ids": ["36978229#6.19", "847825694#3.70"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 270.0, "controlled": 35, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870615#1.29", "877763364#0.14"]}
+{"simulation_time": 271.0, "controlled": 36, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.48"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 272.0, "controlled": 36, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.29"]}
+{"simulation_time": 273.0, "controlled": 35, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["978615349#0.15"]}
+{"simulation_time": 274.0, "controlled": 34, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.71", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 275.0, "controlled": 32, "actual_collision_vehicle_ids": ["36978229#6.22", "847825694#3.72"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36913228.2"]}
+{"simulation_time": 276.0, "controlled": 31, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 277.0, "controlled": 38, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["37552734#6.62.16"]}
+{"simulation_time": 278.0, "controlled": 38, "actual_collision_vehicle_ids": ["36978229#6.22", "36978229#6.47", "847825694#3.73"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 279.0, "controlled": 38, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 280.0, "controlled": 36, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["229357869#5.50"]}
+{"simulation_time": 281.0, "controlled": 36, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.38", "878066815#5.15"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["877763365#6.28"]}
+{"simulation_time": 282.0, "controlled": 33, "actual_collision_vehicle_ids": ["36978229#6.22", "36978229#6.47", "847825694#3.74"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 283.0, "controlled": 35, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 284.0, "controlled": 36, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["gneE41.17", "gneE41.55"]}
+{"simulation_time": 285.0, "controlled": 37, "actual_collision_vehicle_ids": ["36978229#6.18", "847825694#3.75"], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 286.0, "controlled": 41, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": []}
+{"simulation_time": 287.0, "controlled": 40, "actual_collision_vehicle_ids": [], "junction_collision_vehicle_ids": [], "junction_collision_records": [], "stopped_proxy_ids": ["36870615#1.31"]}

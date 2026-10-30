@@ -1,9 +1,11 @@
 # SAC-RWB baseline implementation for Neo
 
-**Latest saved state:** 8 training episodes completed; episode 9 failed a
-transition-coverage guard. Training is stopped. See [current status](CURRENT_STATUS.md)
-and `artifacts/snapshot-2026-10-30/` for the captured results, failure log and
-latest valid full resume checkpoint. Model files use Git LFS.
+**Latest verified state:** collision-teleport transition and outcome-label bugs
+are corrected. The cloud gate passed: four fresh v4 training episodes with full
+resume, a complete replay of the formerly failing episode, 15 tests and six
+fixed-seed validation episodes. See [current status](CURRENT_STATUS.md),
+[gate procedure](CLOUD_READINESS.md) and `artifacts/cloud-readiness-2026-10-30/`.
+Published results and GPU execution remain unverified. Model files use Git LFS.
 
 This is a corrected implementation using the authors' supplied SUMO assets, before
 any uncertainty/quantum-inspired extension. See [the correction ledger](CHANGELOG_BASELINE.md).
@@ -29,7 +31,7 @@ episode `summary.json`, `losses.json` and `steps.jsonl`. Evaluation loads a save
 actor and disables risk prediction and the training-only stopping proxy. AWT/AQL
 and the collision-involvement proxy are explicitly named; read their definitions
 in the ledger before comparing to published tables.
-Protocol v3's `--horizon 1000` means 1000 control-loop steps after reset (as in
+Protocol v4's `--horizon 1000` means 1000 control-loop steps after reset (as in
 the authors' training script); reset time is additional. The monitor window is
 still explicitly [500,1000). Earlier diagnostic pilots used a different horizon
 convention and are labelled accordingly.
@@ -52,13 +54,13 @@ The intended full budget is 500 episodes, conditional on passing real-data risk
 and SAC update, checkpoint/evaluation, protocol and runtime checks. Do not interpret
 the unit tests or the earlier fixed-action smoke as learned-policy performance.
 
-The full single-seed job has been started using:
+For a fresh full v4 run after the cloud execution gate passes:
 
 ```bash
-python run_experiment.py --name full-seed-0 --episodes 500 --seed 0 --eval-sumo-seed 10001
+python run_experiment.py --name full-v4-seed-0 --episodes 500 --seed 0 --eval-sumo-seed 10001
 ```
 
-Read `runs/full-seed-0/status.json`, `training/progress.json` and completed
+Read `runs/full-v4-seed-0/status.json`, `training/progress.json` and completed
 `training/results.json`; verify the recorded process is still alive before
 trusting a saved running status. The manager prevents duplicate instances. After
 training it evaluates the final actor on three **disjoint traffic seeds**
@@ -70,7 +72,8 @@ expecting the live process to survive; full episode-boundary state is on disk.
 Early checkpoint selection uses a separate fixed validation set; see
 [validation protocol](VALIDATION_PROTOCOL.md). Checkpoints 1 and 3 are compared
 using traffic seeds 7001–7003, with the training proxy/predictor disabled. The
-table and paired per-seed differences are under `runs/full-seed-0/validation/`.
+historical v3 table is under `runs/full-seed-0/validation/`. Fresh v4 readiness
+results are recorded separately under `runs/readiness-v4/validation/`.
 Final test seeds 10001–10003 remain untouched.
 
 ```bash

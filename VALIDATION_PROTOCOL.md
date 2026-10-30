@@ -3,6 +3,11 @@
 This is a screening/continuation protocol for the corrected reference-asset
 baseline, not a claim of reproducing the journal or selecting a novel method.
 
+The historical v3 and fresh v4 runs are separate experiments. The v3 episode-9
+collision-teleport failure and labels were corrected before fresh v4 training.
+Current v4 checkpoint 1/3 results are in the cloud-readiness snapshot and
+CURRENT_STATUS.md. Do not merge them with the older EARLY_REVIEW_1_VS_3.md table.
+
 - Validation traffic seeds are fixed at 7001, 7002, 7003. Training uses SUMO
   seeds 1..500. Final test traffic seeds 10001..10003 remain untouched by
   checkpoint selection. Changes chosen using validation are reported explicitly.

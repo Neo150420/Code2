@@ -86,6 +86,52 @@ class BaselineCorrectness(unittest.TestCase):
         self.assertEqual(set(rotated),set(env.keywords_order))
         self.assertEqual(len(set(rotated)),8)
 
+    def test_outgoing_edge_exit_preserves_reward_and_terminates_old_virtual_id(self):
+        from core.costomized_data_structures import Vehicle
+        env = object.__new__(Env)
+        env.max_acc = 3.
+        env.reward_record = {}
+        env.junction_list = ['499']
+        from gym.spaces import Box
+        env.observation_space = Box(low=-1., high=1., shape=(98,), dtype=np.float32)
+        key = '877763350#5.48'
+        env.previous_obs = {key: np.linspace(0, 1, 98, dtype=np.float32)}
+        env.pre_dir_info = {key: ('499', ['topleft'], key)}
+        env.pre_TTI_dic = {key: 1}
+        env.veh_name_mapping_table = {key: (key, False)}
+        env.last_unmapped_control_exit_ids = set()
+        vehicle = Vehicle(id=key, road_id='978615347#1', speed=10.)
+        expected = env.reward_compute(vehicle, env.previous_obs[key][10:18],
+                                      1.5, '499', 'topleft', 0.7, 1)
+        next_obs = np.ones(98, dtype=np.float32)*0.5
+        terminal, reward = env._finish_unmapped_control_exit(vehicle, key, 1.5, {key:0.7}, next_obs)
+        self.assertAlmostEqual(reward, expected)
+        self.assertEqual(terminal[0], 0.)
+        self.assertEqual(next_obs[0], 0.5)  # No mutation of caller's transition state.
+        self.assertTrue(env.veh_name_mapping_table[key][1])
+        self.assertEqual(env.last_unmapped_control_exit_ids, {key})
+        self.assertEqual(terminal.shape, (98,))
+        self.assertTrue(np.isfinite(terminal).all())
+        new_key = env.virtual_id_assign(key)
+        self.assertNotEqual(new_key, key)  # Later junction gets a separate decision identity.
+
+    def test_unmapped_exit_without_context_fails_instead_of_fabricating_transition(self):
+        from core.costomized_data_structures import Vehicle
+        env = object.__new__(Env)
+        env.previous_obs = {}
+        with self.assertRaisesRegex(RuntimeError, 'lacks prior transition context'):
+            env._finish_unmapped_control_exit(Vehicle(id='unknown'), 'unknown', 0., None, None)
+
+    def test_collision_lane_retains_teleported_collider_and_excludes_other_junctions(self):
+        from types import SimpleNamespace
+        env = object.__new__(Env)
+        env.junction_list = ['499']
+        events = [SimpleNamespace(collider='877763350#5.48', victim='36913228.3', lane=':499_3_0'),
+                  SimpleNamespace(collider='other-a', victim='other-b', lane=':4990_0_0'),
+                  SimpleNamespace(collider='approach-a', victim='approach-b', lane='877763350#5_3')]
+        self.assertEqual(env._collision_ids_at_controlled_junctions(events),
+                         {'877763350#5.48', '36913228.3'})
+
     def test_full_resume_restores_buffers_optimizer_and_next_update(self):
         agent = build_agent('cpu',capacity=16)
         risk = TransformerRiskPredictor(98,1)

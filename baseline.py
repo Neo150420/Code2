@@ -153,6 +153,7 @@ def run_episode(agent, predictor, args, out, episode, global_step):
                    control_steps=0, transitions=0, nonterminal_transitions=0,
                    terminal_transitions=0, sac_updates=0, risk_update_calls=0,
                    risk_minibatches=0, missing_transition_keys=0, reward_sum=0.0)
+    summary['unmapped_control_exit_transitions'] = 0
     collision_ids, proxy_ids = set(), set()
     junction_collision_ids = set()
     active_collision_pairs = set()
@@ -186,6 +187,7 @@ def run_episode(agent, predictor, args, out, episode, global_step):
                 keys, actions, risks = [], {}, None
             next_obs, rewards, dones, truncated, info, transition_obs = env.step(actions, risks)
             summary['control_steps'] += 1
+            summary['unmapped_control_exit_transitions'] += len(env.last_unmapped_control_exit_ids)
             global_step += 1
             if set(rewards) != set(actions):
                 summary['missing_transition_keys'] += len(set(actions) ^ set(rewards))
@@ -245,6 +247,7 @@ def run_episode(agent, predictor, args, out, episode, global_step):
                                                controlled=len(keys), actual_collision_vehicle_ids=sorted(env.last_actual_collision_ids),
                                                junction_collision_vehicle_ids=sorted(env.last_actual_junction_collision_ids),
                                                junction_collision_records=collisions,
+                                               unmapped_control_exit_ids=sorted(env.last_unmapped_control_exit_ids),
                                                stopped_proxy_ids=sorted(env.last_proxy_ids))) + '\n')
             if summary['control_steps'] % 100 == 0:
                 (out/'progress.json').write_text(json.dumps(dict(episode=episode, simulation_time=sim_t,
@@ -325,7 +328,7 @@ def main():
     agent = build_agent(args.device, capacity=1_000_000 if args.mode=='train' else 8)
     predictor = TransformerRiskPredictor(98, 1).to(args.device)
     config = dict(vars(args), original_paper_reproduced=False,
-                  protocol='corrected_reference_assets_v3', original_assets=json.loads((ROOT/'provenance.json').read_text()),
+                  protocol='corrected_reference_assets_v4', original_assets=json.loads((ROOT/'provenance.json').read_text()),
                   metric_note='Lane-time queue/wait averages; selected-junction collision vehicle IDs and collision pair onset events per junction entry. Not guaranteed identical to paper CR.',
                   simulator_horizon_includes_reset_warmup=False,
                   episode_budget='horizon control-loop steps after Env.reset, matching upstream training loop')

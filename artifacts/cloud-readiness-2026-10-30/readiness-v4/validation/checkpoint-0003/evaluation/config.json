@@ -1,0 +1,36 @@
+{
+  "mode": "evaluate",
+  "out": "/workspace/Code2/runs/readiness-v4/validation/checkpoint-0003/evaluation",
+  "checkpoint": "/workspace/Code2/runs/readiness-v4/training/checkpoint-0003.pt",
+  "resume": null,
+  "device": "cpu",
+  "episodes": 3,
+  "horizon": 1000,
+  "warmup": 500,
+  "seed": 2000,
+  "sumo_seed": 7001,
+  "update_every": 200,
+  "threads": 1,
+  "original_paper_reproduced": false,
+  "protocol": "corrected_reference_assets_v4",
+  "original_assets": {
+    "upstream": "https://github.com/hank111525/SAC-RWB",
+    "commit": "f60cdbadc8b65cf4699edc6566af7936ff02fba6",
+    "sha256": {
+      "real_data/osm.sumocfg": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f",
+      "real_data/CSeditClean_1.net_threelegs.xml": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4",
+      "real_data/newroute1220_start0.xml": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    }
+  },
+  "metric_note": "Lane-time queue/wait averages; selected-junction collision vehicle IDs and collision pair onset events per junction entry. Not guaranteed identical to paper CR.",
+  "simulator_horizon_includes_reset_warmup": false,
+  "episode_budget": "horizon control-loop steps after Env.reset, matching upstream training loop",
+  "code_sha256": {
+    "baseline.py": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518",
+    "Env.py": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db",
+    "sac/SAC.py": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52",
+    "algos/transformer_risk_model.py": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5",
+    "core/sumo_interface.py": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+  },
+  "checkpoint_sha256": "58e021e85516c92cb62f7d48749093554030a87ea77868d8074d67d2d1cfaa3a"
+}

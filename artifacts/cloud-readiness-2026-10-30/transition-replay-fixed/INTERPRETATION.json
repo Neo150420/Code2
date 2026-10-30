@@ -1,0 +1,9 @@
+{
+  "diagnostic_only": true,
+  "variant": "terminal-transition repair only, before collision-lane label repair",
+  "paper_reproduction": false,
+  "original_failure_step_logs_identical": true,
+  "source_snapshot_hashes_verified": true,
+  "full_1000_step_episode_passed": true,
+  "note": "Not an official continuation of v3. Final v4 replay and fresh v4 pilot are separate evidence."
+}

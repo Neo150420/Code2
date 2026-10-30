@@ -1,0 +1,28 @@
+{
+  "reference": 1,
+  "candidate": 3,
+  "pairs": [
+    {
+      "sumo_seed": 7001,
+      "awt_delta_seconds": 39.340402083333345,
+      "collision_events_delta": -18,
+      "entries_delta": -168,
+      "vehicles_remaining_delta": -217
+    },
+    {
+      "sumo_seed": 7002,
+      "awt_delta_seconds": 18.123444791666657,
+      "collision_events_delta": -17,
+      "entries_delta": -31,
+      "vehicles_remaining_delta": -338
+    },
+    {
+      "sumo_seed": 7003,
+      "awt_delta_seconds": 103.06017187499998,
+      "collision_events_delta": -4,
+      "entries_delta": -145,
+      "vehicles_remaining_delta": 170
+    }
+  ],
+  "warning": "Three paired traffic seeds are a screening check, not a statistically established safety improvement."
+}

@@ -1,0 +1,23 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+test_collision_lane_retains_teleported_collider_and_excludes_other_junctions (test_correctness.BaselineCorrectness) ... ok
+test_efficiency_reward_handles_ties_and_risk_has_negative_sign (test_correctness.BaselineCorrectness) ... ok
+test_evaluation_checkpoint_round_trip (test_correctness.BaselineCorrectness) ... ok
+test_full_resume_restores_buffers_optimizer_and_next_update (test_correctness.BaselineCorrectness) ... ok
+test_nonterminal_bellman_bootstrap_and_actual_parameter_updates (test_correctness.BaselineCorrectness) ... ok
+test_outgoing_edge_exit_preserves_reward_and_terminates_old_virtual_id (test_correctness.BaselineCorrectness) ... ok
+test_risk_labels_require_observed_outcomes_and_padding_matches (test_correctness.BaselineCorrectness) ... ok
+test_rotation_preserves_all_eight_directions (test_correctness.BaselineCorrectness) ... ok
+test_scalar_actions_and_replay_shape_guard (test_correctness.BaselineCorrectness) ... ok
+test_throughput_counts_entry_once_when_vehicle_moves_inside_junction (test_correctness.BaselineCorrectness) ... ok
+test_unmapped_exit_without_context_fails_instead_of_fabricating_transition (test_correctness.BaselineCorrectness) ... ok
+test_collision_rate_uses_pooled_exposure_not_mean_of_percentages (test_validation.ValidationAggregation) ... ok
+test_missing_or_mismatched_traffic_seed_is_rejected (test_validation.ValidationAggregation) ... ok
+test_training_proxy_or_risk_inference_leakage_is_rejected (test_validation.ValidationAggregation) ... ok
+test_zero_entries_is_undefined_not_safe_zero (test_validation.ValidationAggregation) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.502s
+
+OK

@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "exit_code": 2,
+  "reason": "Old v3 resume rejected under v4 protocol; no silent mixing"
+}

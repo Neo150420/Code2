@@ -1,0 +1,17 @@
+{
+  "parent_checkpoint": "/workspace/Code2/runs/full-seed-0/training/resume.pt",
+  "source_sha256": {
+    "baseline.py": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518",
+    "Env.py": "5e318a659ba96c7bffdcc0eacc15a6739655e3e7292af3530f10a99c0bc326bd",
+    "sac/SAC.py": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52",
+    "algos/transformer_risk_model.py": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5",
+    "core/sumo_interface.py": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+  },
+  "changed_source": [
+    "baseline.py",
+    "Env.py"
+  ],
+  "diagnostic_only": true,
+  "original_paper_reproduced": false,
+  "parent_completed_episodes": 8
+}

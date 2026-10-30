@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "fresh_v4_protocol": true,
+    "four_full_episodes": true,
+    "complete_transitions_and_real_updates": true,
+    "finite_episode_results": true,
+    "actual_same_source_resume": true,
+    "current_source_matches_training": true,
+    "original_simulator_assets": true,
+    "episode-0001_1000_step_records": true,
+    "episode-0003_1000_step_records": true,
+    "episode-0000_1000_step_records": true,
+    "episode-0002_1000_step_records": true,
+    "collision_participants_match_recorded_events": true,
+    "exit_log_summary_agreement": true,
+    "final_source_failing_episode_replay": true,
+    "original_288s_teleport_handled": true,
+    "teleported_collision_participants_preserved": true,
+    "checkpoint_1_same_source": true,
+    "checkpoint_1_fixed_seeds": true,
+    "checkpoint_1_evaluation_contract": true,
+    "checkpoint_3_same_source": true,
+    "checkpoint_3_fixed_seeds": true,
+    "checkpoint_3_evaluation_contract": true
+  },
+  "training_episodes": 4,
+  "validation_episodes": 6,
+  "unmapped_control_exit_transitions": 0,
+  "original_paper_reproduced": false,
+  "gpu_execution_tested": false,
+  "scope": "Bounded CPU execution gate; not convergence, safety superiority, or exact paper reproduction."
+}
