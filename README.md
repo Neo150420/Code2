@@ -2,7 +2,7 @@
 
 **Latest verified state:** collision-teleport transition and outcome-label bugs
 are corrected. The cloud gate passed: four fresh v4 training episodes with full
-resume, a complete replay of the formerly failing episode, 20 current tests and six
+resume, a complete replay of the formerly failing episode, 24 current tests and six
 fixed-seed validation episodes. See [current status](CURRENT_STATUS.md),
 [gate procedure](CLOUD_READINESS.md) and `artifacts/cloud-readiness-2026-10-30/`.
 Published results and GPU execution remain unverified. Model files use Git LFS.
@@ -13,8 +13,10 @@ Published paper results have not been reproduced. Upstream is pinned in provenan
 
 **Active reproduction:** unspecified settings are now frozen as declared
 assumptions in [the reproduction protocol](REPRODUCTION_PROTOCOL.md). The verified
-four-episode v4 lineage is being continued toward the checkpoint-10 review gate,
-within an intended 500-episode experiment. Check live status before starting jobs;
+v4 lineage completed the checkpoint-10 review and is continuing toward 25,
+with an execution monitor for the intended 500-episode budget. See
+[policy diagnosis](POLICY_DIAGNOSIS.md) for the completed same-state/optimization
+diagnostics and their collision/flow tradeoff. Check live status before starting jobs;
 the launch receipt is historical evidence, not a completion claim.
 
 The current cloud is CPU-only. Python 3.10/Torch 1.13.1 CPU is installed at

@@ -1,0 +1,18 @@
+{
+  "started_at_ist": "2026-10-30T17:37:37.642930+05:30",
+  "campaign_pid": 24290,
+  "command": [
+    "/workspace/research/.venv/bin/python",
+    "/workspace/Code2/run_reproduction_campaign.py",
+    "--run",
+    "readiness-v4",
+    "--contract",
+    "/workspace/Code2/reproduction/assumptions-v1.json"
+  ],
+  "script_sha256": "7ce1c70c03783965de9133d4b3456f862f243f1f3a33a9388163a72a0101d99f",
+  "frozen_contract_sha256": "241c1ca4b472daadc76eec16eb8f0bebc16ef0a036645685d53a1108f66db675",
+  "intended_target": 500,
+  "baseline_source_changed": false,
+  "original_paper_reproduced": false,
+  "note": "Automatic execution integrity checks; no automatic hyperparameter/reward tuning or superiority claim. Cloud processes are not guaranteed to survive shutdown."
+}

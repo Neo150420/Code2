@@ -1,0 +1,15 @@
+{
+  "diagnostic_only": true,
+  "parent": "Frozen baseline checkpoint 10; 50 SAC updates",
+  "extra_offline_updates": [
+    250,
+    1000
+  ],
+  "total_sac_updates": [
+    300,
+    1050
+  ],
+  "no_new_training_rollouts": true,
+  "final_test_evaluated": false,
+  "limitation": "Unequal optimization budget diagnostic, not a novel-method or published-paper reproduction comparison"
+}

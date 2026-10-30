@@ -1,0 +1,21 @@
+{
+  "stage": "completed",
+  "monitor_pid": 22052,
+  "requested": [
+    1,
+    3,
+    10
+  ],
+  "completed": [
+    1,
+    3,
+    10
+  ],
+  "validation_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "updated_unix": 1793360521.1758816,
+  "comparison": "/workspace/Code2/runs/readiness-v4/validation/comparison.md"
+}

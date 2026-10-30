@@ -1,0 +1,29 @@
+{
+  "classification": "corrected_author_asset_reconstruction",
+  "training_episodes_in_snapshot": 10,
+  "parent_sac_updates": 50,
+  "training_transitions": 366106,
+  "missing_training_transitions": 0,
+  "primary_validation_checkpoints": [
+    1,
+    3,
+    10
+  ],
+  "validation_traffic_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "offline_sac_diagnostics": [
+    250,
+    1000
+  ],
+  "new_diagnostic_validation_episodes": 6,
+  "tests_passed": 24,
+  "original_paper_reproduced": false,
+  "full_500_episode_training_complete": false,
+  "gpu_execution_tested": false,
+  "final_test_evaluated": false,
+  "primary_baseline_continues_separately": true,
+  "note": "Snapshot is immutable checkpoint-10 evidence. Live baseline/campaign status may advance. Executed diagnostic source is preserved separately from the later guarded root version; all absolute paths and PIDs are provenance."
+}

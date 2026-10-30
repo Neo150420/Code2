@@ -1,0 +1,46 @@
+***Starting server on port 35349 ***
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (671ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.83s
+ TraCI-Duration: 0.81s
+ Real time factor: 1.20919
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Loading net-file from '/workspace/Code2/real_data/CSeditClean_1.net_threelegs.xml' ... done (602ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1026.00
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 627.52s
+ TraCI-Duration: 543.30s
+ Real time factor: 1.635
+ UPS: 1825.786743
+Vehicles: 
+ Inserted: 3456 (Loaded: 9679)
+ Running: 2079
+ Waiting: 4795
+Teleports: 183 (Collisions: 183)
+Statistics (avg):
+ RouteLength: 924.28
+ Speed: 7.63
+ Duration: 144.73
+ WaitingTime: 32.09
+ TimeLoss: 52.09
+ DepartDelay: 16.91
+

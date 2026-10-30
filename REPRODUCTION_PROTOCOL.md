@@ -34,6 +34,27 @@ Implementation corrections and reward-sign interpretation remain in the ledger.
 
 ## Running and reviewing
 
+**Current execution:** the checkpoint-10 review is complete; see POLICY_DIAGNOSIS.md.
+The unchanged baseline continues toward 25. A separate campaign monitor now
+automates execution checks at 25, 50, 100 and 200, then continues the fixed
+500-episode target and its reserved final evaluation. It stops for input/weight/
+seed mismatches, failed or missing processes, nonfinite results, missing
+transitions, zero evaluation exposure or insufficient disk space. These are
+execution checks, not automatic claims of scientific improvement. It never
+tunes rewards, observations, assets or hyperparameters. Negative early metrics
+remain in the record; the full baseline budget is needed before judging convergence.
+
+```bash
+python run_reproduction_campaign.py --run readiness-v4 \
+  --contract reproduction/assumptions-v1.json
+```
+
+The campaign can adopt an existing valid manager. Start only one campaign and
+one manager. Inspect `runs/readiness-v4/campaign-status.json` alongside manager
+status and training progress. If either reports an error, inspect before any
+restart. The command below documents the original initial review segment;
+do not launch it alongside the active campaign.
+
 The existing fresh v4 lineage is `runs/readiness-v4/training`; its first four
 episodes are preserved in the committed cloud-readiness snapshot. It is now
 continued under this contract. Historical v3 episodes are never added to it.

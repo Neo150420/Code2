@@ -1,75 +1,73 @@
 # Project status — 30 October 2026
 
-The corrected v4 baseline passed the bounded CPU execution gate. The published
-paper has **not** been reproduced; CUDA execution and 500-episode training have
-not been completed. The verified v4 lineage is now being continued under the
-[declared-assumption reproduction protocol](REPRODUCTION_PROTOCOL.md), with a
-500-episode target and a natural episode-10 validation/review stop. At launch,
-four training episodes were complete; later completion must be read from live
-`runs/readiness-v4/training/results.json`. See `reproduction/launch-receipt.json`.
+Checkpoint 10 and its fixed-seed validation are complete. The original corrected
+baseline is continuing unchanged toward checkpoint 25; an execution campaign
+monitor is configured to advance the frozen 500-episode budget through later
+checks. Full training and reserved final testing are **not complete**. The
+published paper has not been reproduced, and CUDA has not been tested here.
 
-## Confirmed repairs
+## Completed baseline evidence
 
-The original episode-9 failure was reproduced with identical first 261 step-log
-records. At simulation time 288 s a junction collision teleported vehicle
-`877763350#5.48` onto an outgoing edge. The old code skipped its reward/transition.
-It also missed that collider in selected-junction outcome labels because it
-checked the vehicle's post-teleport road rather than the collision event lane.
-Both defects are corrected. The transition-coverage assertion remains enabled.
+- Ten completed episodes, 10,000 control steps, 366,106 transitions, 50 SAC
+  updates and zero missing transitions in the checkpoint-10 snapshot.
+- Checkpoints 1, 3 and 10 evaluated on the same seeds 7001–7003, deterministic
+  actors, no predictor inference and no training stopping proxy.
+- 24 correctness, aggregation, experiment-identity and campaign-gate tests pass.
+- Earlier collision-teleport transition/outcome-label fixes remain in place;
+  baseline source, rewards and original simulator assets are unchanged.
 
-Final v4 source replayed the complete failing episode: 1000 control steps,
-70,619 transitions, zero missing transitions, five SAC updates and five risk
-training calls. Both participants of the observed junction collision were
-recorded. This is a labelled diagnostic using the old episode-8 state, not a
-silent continuation of the old learning curve.
+| Baseline checkpoint | AWT (s) | AQL (veh) | Collision events | Junction entries |
+|---|---:|---:|---:|---:|
+| 1 | 141.045 | 0.866 | 41 | 1426 |
+| 3 | 194.553 | 1.105 | 2 | 1082 |
+| 10 | 283.948 | 1.181 | 0 | 504 |
 
-## Fresh v4 execution evidence
+Checkpoint 10 increased waiting and reduced entry flow on all three paired seeds.
+Zero observed collisions is not established safety superiority.
 
-- Four completed 1000-step training episodes, with a real process restart and
-  full-checkpoint resume between episodes 3 and 4.
-- 70,764 transitions, 20 SAC updates, 19 risk-training calls and zero missing
-  transitions. Actor and risk parameters changed; recorded losses were finite.
-- 15 correctness/aggregation tests passed, including next-update agreement after
-  checkpoint restoration. The additional readiness verifier passed 22 checks.
-- The current suite additionally passes five reproduction-controller tests
-  (20 total), covering frozen input identity, review stops, failures and pooled
-  final collision exposure. See `reproduction/contract-tests.log`.
-- Original simulator input hashes and train/evaluation source hashes match.
-- Checkpoints 1 and 3 each completed evaluation on seeds 7001–7003. Predictor
-  inference and the training conflict proxy were disabled. Final test seeds
-10001–10030 are now reserved under the declared reconstruction contract; none
-have been evaluated. These are one training run's early checkpoints.
+## Policy diagnosis and decision
 
-| Validation metric | Checkpoint 1 | Checkpoint 3 |
-|---|---:|---:|
-| Mean AWT (s) | 141.045 | 194.553 |
-| Mean AQL (vehicles) | 0.866 | 1.105 |
-| Pooled junction collision-pair onset events | 41 | 2 |
-| Pooled junction entries | 1426 | 1082 |
-| Events / entries (%) | 2.875 | 0.185 |
+On the same 4096 training-replay states, the checkpoint-10 actor strongly braked
+on all 1167 empty-junction states (mean -2.846 m/s²). Its critic preferred braking
+on all those empty states. The replay contains 366,106 transitions, but only 50
+SAC updates had occurred. Additional SAC optimization on that fixed replay
+changes the conditional actions. This supports under-optimization as a
+contributor; it does not establish a sole cause or a new runtime defect.
 
-Waiting increased on every paired seed. Collision events decreased, with lower
-junction entry flow. This is an early safety–efficiency tradeoff, not convergence
-or a demonstrated overall improvement. Events/entries is an operational metric;
-it is not established as identical to the paper's CR.
+| Diagnostic actor | Total SAC updates | AWT (s) | AQL | Collision events | Entries | Events / entries (%) |
+|---|---:|---:|---:|---:|---:|---:|
+| Original checkpoint 10 | 50 | 283.948 | 1.181 | 0 | 504 | 0.000 |
+| Same parent +250 offline updates | 300 | 160.601 | 0.740 | 1 | 810 | 0.123 |
+| Same parent +1000 offline updates | 1050 | 36.628 | 0.615 | 18 | 3676 | 0.490 |
 
-## Saved evidence and remaining work
+The diagnostic actors use unequal optimization budgets. They are not proposed
+methods, equal-budget improvements or published-paper reproductions. Their
+validation shows a flow/collision tradeoff; neither is established as safer.
+They do not replace the primary baseline. See [full diagnosis](POLICY_DIAGNOSIS.md).
 
-The fresh full resume is `runs/readiness-v4/training/resume.pt` (four completed
-v4 episodes). The old v3 run stopped after eight episodes and remains preserved
-separately. Do not combine their episode counts or bypass source-hash guards.
+The primary baseline continues with its original reward and one SAC update per
+200 steps. The campaign checks execution integrity at the declared milestones
+and preserves negative metrics. It does not automatically tune the method or
+claim a scientific win. Failure, nonfinite results, missing transitions, source/
+weight/seed mismatch or zero validation exposure stops automatic continuation.
 
-The committed export is [cloud readiness snapshot](artifacts/cloud-readiness-2026-10-30/SNAPSHOT.json),
-including checkpoints, raw steps, source snapshots, per-seed evaluations, test
-logs, the readiness report and a SHA256 manifest. Model files use Git LFS;
-run `git lfs pull` after cloning to download the actual checkpoint data.
-The [older snapshot](artifacts/snapshot-2026-10-30/SNAPSHOT.json) retains the v3
-failure and parent checkpoint. Historical absolute paths/PIDs are provenance,
-not live services. See [gate procedure](CLOUD_READINESS.md) and the correction ledger.
+## Live state and archived evidence
 
-The missing scenario/protocol/update settings now have explicit reconstruction
-choices; they are not claims of knowing the authors' unreported settings. The
-paper's geometry and successful-passage CR correspondence remain unverified.
-Do not tune assumptions toward its table. Local CUDA still needs a portability
-check. The cloud gate establishes bounded execution correctness, not that every
-later episode is bug-free or that the 500-episode experiment is complete.
+Read `runs/readiness-v4/status.json`, `campaign-status.json`,
+`training/progress.json` and completed `training/results.json`; verify processes
+are alive. Saved launch receipts and PIDs are historical observations. Cloud
+shutdown may stop processes; full episode checkpoints support recovery.
+Final seeds 10001–10030 remain unused until the full training/selection process.
+
+The [checkpoint-10 snapshot](artifacts/checkpoint10-review-2026-10-30/SNAPSHOT.json)
+contains its full resume, ten checkpoints/episodes, source snapshots, common-state
+panel, diagnostic actors, nine baseline and six new diagnostic evaluation
+rollouts, paired summaries, tests and a SHA256 manifest. Model files use Git LFS;
+run `git lfs pull` after cloning. This frozen parent remains reproducible even
+when live training advances. Earlier v4 readiness and failed v3 evidence remain
+in their separate historical snapshots; do not combine their learning curves.
+
+The experiment is a [declared-assumption reconstruction](REPRODUCTION_PROTOCOL.md)
+using the authors' actual assets. Its geometry, measurement window and event/
+entry collision percentage are not established as identical to the journal's
+Tables II/III. Beating SOTA or achieving a journal contribution is not claimed.

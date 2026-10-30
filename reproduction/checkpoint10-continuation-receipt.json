@@ -1,0 +1,27 @@
+{
+  "started_at_ist": "2026-10-30T17:28:35.958013+05:30",
+  "manager_pid": 23778,
+  "command": [
+    "/workspace/research/.venv/bin/python",
+    "/workspace/Code2/run_experiment.py",
+    "--name",
+    "readiness-v4",
+    "--episodes",
+    "500",
+    "--review-at",
+    "25",
+    "--seed",
+    "0",
+    "--eval-sumo-seed",
+    "10001",
+    "--eval-episodes",
+    "30",
+    "--contract",
+    "/workspace/Code2/reproduction/assumptions-v1.json"
+  ],
+  "starting_completed_episodes": 10,
+  "current_training_budget": 25,
+  "intended_full_budget": 500,
+  "training_completed": false,
+  "review_decision": "/workspace/Code2/runs/readiness-v4/reviews/checkpoint-0010/decision.json"
+}

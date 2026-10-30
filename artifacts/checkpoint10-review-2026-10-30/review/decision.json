@@ -1,0 +1,9 @@
+{
+  "review": "checkpoint 10",
+  "decision": "continue unchanged primary baseline to 25 as control; evaluate offline optimization diagnostics separately",
+  "evidence": "On 1167 common empty-junction states, cp10 mean action -2.8457 m/s2. Extra offline SAC updates change conditional actions without changing rewards or assets.",
+  "limitation": "Training-state diagnostic supports under-optimization hypothesis; does not establish safer driving or superiority.",
+  "original_paper_reproduced": false,
+  "baseline_source_changed": false,
+  "final_test_evaluated": false
+}
