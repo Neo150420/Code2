@@ -1,0 +1,22 @@
+{
+  "observed_at_ist": "2026-10-30T16:10:08.580833+05:30",
+  "stage": "training",
+  "manager_pid": 20169,
+  "training_pid": 20170,
+  "completed_training_episodes": 4,
+  "progress": {
+    "episode": 4,
+    "simulation_time": 526.0,
+    "global_loop_steps": 4500,
+    "sac_updates": 2,
+    "risk_update_calls": 2,
+    "risk_minibatches": 312,
+    "risk_safe_buffer": 3368,
+    "risk_collision_buffer": 3605,
+    "elapsed_seconds": 136.61839396100186
+  },
+  "contract_verified": true,
+  "full_training_completed": false,
+  "final_test_evaluated": false,
+  "note": "Point-in-time launch observation; consult live status/results for later progress."
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "classification": "corrected_author_asset_reconstruction",
+  "protocol": "corrected_reference_assets_v4",
+  "upstream": "https://github.com/hank111525/SAC-RWB",
+  "upstream_commit": "f60cdbadc8b65cf4699edc6566af7936ff02fba6",
+  "frozen_after_completed_episodes": 4,
+  "prior_validation_seen": [
+    1,
+    3
+  ],
+  "original_paper_reproduced": false,
+  "primary_run": "readiness-v4",
+  "training_target_episodes": 500,
+  "review_milestones": [
+    10,
+    25,
+    50,
+    100,
+    200
+  ],
+  "fixed_cli": {
+    "seed": 0,
+    "sumo_seed": 1,
+    "horizon": 1000,
+    "warmup": 500,
+    "update_every": 200,
+    "threads": 2,
+    "device": "cpu"
+  },
+  "validation_traffic_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "final_test_seeds": [
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027,
+    10028,
+    10029,
+    10030
+  ],
+  "critical_source_sha256": {
+    "baseline.py": "18980fc5ff2a731c97e5119a345413ee381018efd7d4c148ea107d6952d07518",
+    "Env.py": "30edd2268165b5723f42465aa2a58ff9366ae913b8ef0cc6172580890b6706db",
+    "sac/SAC.py": "b810aeae69e133acaaa27d927f935041a96eda48ae84fecccab45a5416358d52",
+    "algos/transformer_risk_model.py": "43f408f141648d6c8990b3c10f8fcd23c8e3ec67beacba2a57450300a6fa2aa5",
+    "core/sumo_interface.py": "b2c6fcb7edaf57046d0d6f47247ed017bf52d6ec14f6289665e7d4c59c3648d9"
+  },
+  "asset_sha256": {
+    "real_data/osm.sumocfg": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f",
+    "real_data/CSeditClean_1.net_threelegs.xml": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4",
+    "real_data/newroute1220_start0.xml": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+  },
+  "dependency_lock_sha256": {
+    "requirements-smoke.lock.txt": "b4b1392cf368e352ad03120f05318ff08500774588218904e3443aeabbde882c",
+    "requirements-sumo.lock.txt": "cb13ffbebea9c5c93ae956a2e19245a5e1f10c739cf1a83b1fdeeaf3a670d64d"
+  },
+  "assumptions": [
+    {
+      "id": "scenario",
+      "origin": "declared reconstruction choice",
+      "value": "Authors supplied unchanged network/routes; controlled junctions 229, 499, 332, 334",
+      "limitation": "Does not match final paper symmetric single-intersection description; not an exact geometry reproduction"
+    },
+    {
+      "id": "demand",
+      "origin": "author repository",
+      "value": "Use original route departure times, routes and turn distribution; no demand scaling",
+      "limitation": "Do not invent missing real-world traffic observations"
+    },
+    {
+      "id": "population",
+      "origin": "author configuration",
+      "value": "100% RV assignment; SUMO background dynamics and safety settings unchanged",
+      "limitation": "Not an uncertain-human-driver or occlusion extension"
+    },
+    {
+      "id": "schedule",
+      "origin": "observed author code / declared choice",
+      "value": "One SAC gradient update every 200 control-loop steps; risk training every such eligible update, 3 epochs",
+      "limitation": "Paper update multiplicity ambiguous; do not call a different update budget the same baseline"
+    },
+    {
+      "id": "window",
+      "origin": "declared choice retaining author monitor convention",
+      "value": "1000 control steps after reset; measurement uses simulator/monitor indices [500,1000)",
+      "limitation": "Not established as Table II 1500-round/step protocol"
+    },
+    {
+      "id": "collision_metric",
+      "origin": "explicit operational definition",
+      "value": "Selected-junction physical collision-pair onset events divided by junction entries; pool exposure across seeds",
+      "limitation": "Not established as paper successful-passage CR; undefined when denominator is zero"
+    },
+    {
+      "id": "training_conflicts",
+      "origin": "paper and author code",
+      "value": "Stopped inside selected junction below 0.1 m/s is a training-only proxy; remove those vehicles; record physical collisions separately",
+      "limitation": "Proxy events are not physical crashes"
+    },
+    {
+      "id": "evaluation",
+      "origin": "paper architecture plus declared seed budget",
+      "value": "Deterministic actor only, no risk inference and no training conflict proxy; 3 screening seeds, 30 final traffic seeds",
+      "limitation": "One training seed does not establish statistical superiority"
+    },
+    {
+      "id": "execution_fixes",
+      "origin": "verified implementation corrections",
+      "value": "Preserve corrected scalar actions, terminal masks, waiting slice/rank/rotation, physical collision lane labels and teleport transitions",
+      "limitation": "This corrected implementation differs from blindly running defective author code"
+    }
+  ],
+  "declared_model": {
+    "state_dim": 98,
+    "action_dim": 1,
+    "acceleration_range": [
+      -3,
+      3
+    ],
+    "speed_limit_mps": 10,
+    "control_distance_m": 30,
+    "sac_hidden": [
+      256,
+      256
+    ],
+    "actor_lr": 0.0003,
+    "critic_lr": 0.0004,
+    "gamma": 0.99,
+    "sac_batch": 256,
+    "replay_capacity": 1000000,
+    "initial_alpha": 0.12,
+    "adaptive_alpha": true,
+    "risk_sequence_length": 10,
+    "risk_embedding": 128,
+    "risk_layers": 2,
+    "risk_heads": 4,
+    "attention_beta": 0.2,
+    "risk_lr": 1e-05,
+    "risk_batch": 128,
+    "risk_epochs_per_call": 3,
+    "risk_buffer_per_class": 10000
+  },
+  "comparison_rules": [
+    "No fabricated results or tuning toward the published table",
+    "Same assets, observations, reward/cost definitions, compute and tuning budget, traffic seeds and evaluation for baseline and proposed methods",
+    "Modified human-behaviour environment is a separately labelled task and retrains every compared method",
+    "Do not use final test seeds for checkpoint selection or hyperparameter tuning",
+    "Report raw collision burden, exposure, waiting and queues; do not declare success from reduced traffic entry",
+    "Confirm promising comparisons across independent training seeds before journal superiority claims",
+    "Negative or inconclusive outcomes remain reportable; beating SOTA is not guaranteed"
+  ],
+  "execution_source_sha256": {
+    "run_experiment.py": "eae846cf891778f288c07165006fd75896b41853aebe74a76e842ffeed4c1657",
+    "checkpoint_validation.py": "af23d7be99bc0e4b7efd744af7f737eb5f80f155e0263c547439a0ec96b8bd48",
+    "reproduction_contract.py": "964e9994fb2477d30c4060bad14ab3b3899dae1956c57800620695be035904fe"
+  }
+}

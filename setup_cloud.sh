@@ -16,7 +16,7 @@ uv pip install --python /workspace/research/.sumo-venv/bin/python -r requirement
 uv pip check --python /workspace/research/.venv/bin/python
 uv pip check --python /workspace/research/.sumo-venv/bin/python
 export PATH=/workspace/research/.venv/bin:/workspace/research/.sumo-venv/bin:$PATH
-python -m unittest -v test_correctness test_validation
+python -m unittest -v test_correctness test_validation test_reproduction
 python - <<'PY'
 import hashlib,json
 from pathlib import Path

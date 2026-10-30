@@ -1,0 +1,29 @@
+{
+  "started_at_ist": "2026-10-30T16:07:33.891040+05:30",
+  "manager_pid": 20169,
+  "command": [
+    "/workspace/research/.venv/bin/python",
+    "/workspace/Code2/run_experiment.py",
+    "--name",
+    "readiness-v4",
+    "--episodes",
+    "500",
+    "--review-at",
+    "10",
+    "--seed",
+    "0",
+    "--eval-sumo-seed",
+    "10001",
+    "--eval-episodes",
+    "30",
+    "--contract",
+    "/workspace/Code2/reproduction/assumptions-v1.json"
+  ],
+  "contract_sha256": "241c1ca4b472daadc76eec16eb8f0bebc16ef0a036645685d53a1108f66db675",
+  "starting_completed_episodes": 4,
+  "current_training_budget": 10,
+  "intended_full_budget": 500,
+  "classification": "corrected_author_asset_reconstruction",
+  "training_completed": false,
+  "note": "Launch receipt only. Live status is runs/readiness-v4/status.json; checkpoint 10 requires review. Processes do not survive cloud shutdown reliably."
+}

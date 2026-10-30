@@ -9,7 +9,8 @@ Current v4 checkpoint 1/3 results are in the cloud-readiness snapshot and
 CURRENT_STATUS.md. Do not merge them with the older EARLY_REVIEW_1_VS_3.md table.
 
 - Validation traffic seeds are fixed at 7001, 7002, 7003. Training uses SUMO
-  seeds 1..500. Final test traffic seeds 10001..10003 remain untouched by
+  seeds 1..500. The declared reconstruction now reserves final test traffic
+  seeds 10001..10030 (expanded before any final testing). They remain untouched by
   checkpoint selection. Changes chosen using validation are reported explicitly.
 - First comparison: completed checkpoints 1 and 3 from the same training run.
   Next review milestone: checkpoint 10. Later milestones are 25, 50, 100, 200,

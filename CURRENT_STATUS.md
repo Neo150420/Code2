@@ -2,7 +2,11 @@
 
 The corrected v4 baseline passed the bounded CPU execution gate. The published
 paper has **not** been reproduced; CUDA execution and 500-episode training have
-not been completed. No full trainer is running.
+not been completed. The verified v4 lineage is now being continued under the
+[declared-assumption reproduction protocol](REPRODUCTION_PROTOCOL.md), with a
+500-episode target and a natural episode-10 validation/review stop. At launch,
+four training episodes were complete; later completion must be read from live
+`runs/readiness-v4/training/results.json`. See `reproduction/launch-receipt.json`.
 
 ## Confirmed repairs
 
@@ -27,10 +31,14 @@ silent continuation of the old learning curve.
   transitions. Actor and risk parameters changed; recorded losses were finite.
 - 15 correctness/aggregation tests passed, including next-update agreement after
   checkpoint restoration. The additional readiness verifier passed 22 checks.
+- The current suite additionally passes five reproduction-controller tests
+  (20 total), covering frozen input identity, review stops, failures and pooled
+  final collision exposure. See `reproduction/contract-tests.log`.
 - Original simulator input hashes and train/evaluation source hashes match.
 - Checkpoints 1 and 3 each completed evaluation on seeds 7001–7003. Predictor
   inference and the training conflict proxy were disabled. Final test seeds
-  10001–10003 remain untouched. These are one training run's early checkpoints.
+10001–10030 are now reserved under the declared reconstruction contract; none
+have been evaluated. These are one training run's early checkpoints.
 
 | Validation metric | Checkpoint 1 | Checkpoint 3 |
 |---|---:|---:|
@@ -59,10 +67,9 @@ The [older snapshot](artifacts/snapshot-2026-10-30/SNAPSHOT.json) retains the v3
 failure and parent checkpoint. Historical absolute paths/PIDs are provenance,
 not live services. See [gate procedure](CLOUD_READINESS.md) and the correction ledger.
 
-Exact journal-result reproduction still requires resolving the paper's symmetric
-single-intersection description versus the supplied multi-junction assets,
-Table II/III evaluation protocols and the precise successful-passage denominator
-and update schedule. Do not infer missing settings by tuning toward the table.
-Before a long local GPU run, verify CUDA execution on Neo's hardware and settle
-which documented benchmark configuration is being reproduced. The cloud gate
-establishes bounded execution correctness, not that every later episode is bug-free.
+The missing scenario/protocol/update settings now have explicit reconstruction
+choices; they are not claims of knowing the authors' unreported settings. The
+paper's geometry and successful-passage CR correspondence remain unverified.
+Do not tune assumptions toward its table. Local CUDA still needs a portability
+check. The cloud gate establishes bounded execution correctness, not that every
+later episode is bug-free or that the 500-episode experiment is complete.
